@@ -1,0 +1,130 @@
+//**
+// Buttons
+//**
+.button__wrap {
+    text-align: center;
+    }
+// Default button
+.btn {
+  background: $c-main-pink;
+  border-radius:$btn-br;
+  border: 1px solid $c-main-pink;
+  color: $c-Lightest;
+  display: inline-block;
+  font-family: $font-primary;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    background: $c-Lightest;
+    border-color: $c-main-pink;
+    color: $c-main-pink;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: darken($c-main-pink, 10);
+    border-color: darken($c-main-pink, 10);
+  }
+}
+.disabled{
+    background: lighten($c-main-gray, 30);
+    border: lighten($c-main-gray, 30);
+    color: darken(white,20)
+  }
+
+// Primary action button
+.btn-primary {
+  background-color: $c-main-pink;
+  border-color: $c-main-pink;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    background: $c-Lightest;
+    border-color: $c-main-pink;
+    color: $c-main-pink;
+  }
+
+  &:active {
+    background: $c-Lightest;
+    border-color: $c-main-pink;
+    color: $c-main-pink;
+  }
+}
+
+.btn-secondary {
+  background: $c-Lightest;
+  border-color: $c-main-pink;
+  color: $c-main-pink;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: $c-main-pink;
+    border-color: $c-main-pink;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: $c-main-pink;
+    border-color: $c-main-pink;
+    color: #fff;
+  }
+}
+
+// Larger button
+.btn-lg {
+  font-size: 1.4em;
+  padding: 15px 60px;
+}
+
+// Smaller button
+.btn-sm {
+  font-size: .85em;
+  padding: 5px 10px;
+}
+
+// Link button - a button that looks like a link
+.btn-link {
+  background: transparent;
+  border: 0;
+  color: $c-main-pink;
+  text-shadow: none;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    text-decoration: underline;
+  }
+}
+
+
+// Responsive styles if needed
+// @include responsive($big-break) {
+// }
+@include responsive($small-break) {
+  .btn{
+    display: inline-block;
+    margin-bottom: 10px;
+
+  }
+
+}

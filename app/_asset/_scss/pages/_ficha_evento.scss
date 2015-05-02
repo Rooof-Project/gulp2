@@ -1,0 +1,215 @@
+
+.ficha-evento{
+    background-color: $grey;
+    }
+.img-main{
+    width: 100%;
+    margin-bottom: 0px;
+        }
+
+.main-container{
+    background-color: white;
+    padding: 30px 50px;
+
+    .divider{
+        margin: 30px 0px;
+        }
+    }
+
+  @media screen and (max-width: 900px) {
+    .main-container {
+      padding: 30px;
+    }
+  }
+
+.map{
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.map-responsive {
+  margin: 2.5rem auto 2rem;
+  height: 0px;
+  width: 90%;
+}
+
+.sobre-host__wrap{
+    padding:10px 0px;
+
+    .host-img{
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+    }
+    .title{
+        float: left;
+        width: 70%;
+        padding-bottom: 20px;
+    }
+
+    h2{
+        line-height: 1.5rem;
+    }
+
+    .right {
+      float: right;
+    }
+}
+
+@media screen and (max-width: (700px)) {
+  .sobre-host__wrap {
+    .title {
+      width: 100%;
+      padding-bottom: 10px;
+    }
+
+    .right {
+      float: left;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.aside{
+    padding:0px 20px;
+
+    h5.fecha{
+        &:before{
+            background: url("../img/calendar.png") no-repeat center;
+            content: '';
+            display: inline-block;
+            height: 26px;
+            width: 26px;
+            overflow: hidden;
+            opacity: .3;
+            margin: 0 10px -7px 0;
+            }
+        }
+
+     h5.lugar{
+        &:before{
+            content: '';
+            background: url("../img/place.png") no-repeat center;
+            display: inline-block;
+            height: 26px;
+            width: 26px;
+            overflow: hidden;
+            opacity: .3;
+            margin: 0 10px -7px 0;
+            }
+        }
+
+    h5.aforo{
+        &:before{
+            content: '';
+            background: url("../img/user.png") no-repeat center;
+            display: inline-block;
+            height:26px;
+            width:26px;
+            overflow:hidden;
+            opacity: .3;
+            margin: 0 10px -5px 0;
+        }
+    }
+
+    .tag-musica,.tag-gastronomia,.tag-teatro, .tag-humor, .tag-arte {
+          margin-bottom: 2rem;
+    }
+}
+
+.info{
+    h5, p{
+        margin: 0px;
+    }
+    p{
+        padding: 0px 0px 15px 36px;
+    }
+}
+
+.main-precio{
+  background: url("../img/etiqueta-white.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px 0px;
+  height: 30px;
+  width: 120px;
+  padding: 2px 0px 2px 15px;
+  p{
+    text-align: center;
+  }
+
+}
+.border-ticket{
+   background: white;
+   position: relative;
+   z-index: 444;
+
+   ul{
+    list-style: none;
+    margin:10px 0px;
+    padding: 0;
+   }
+}
+.ticket__wrap{
+    width: 200px;
+}
+.ticket{
+    padding: 20px 10px 10px 20px;
+}
+
+.border-ticket:before{
+   content:"";
+   height: 5px;
+   width: 100%;
+   background-color: $grey;
+   background-image: radial-gradient(white 40%, transparent 16%);
+   background-repeat: repeat;
+   background-size: 10px 10px;
+   background-position: -10px 0px;
+   position: absolute;
+   top: 0px;
+}
+
+.btn-full{
+     width: 100%;
+}
+
+.compartir__wrap{
+  float: left;
+  border-top: solid 4px #ff3766;
+  margin-top: 20px;
+  width: 80px;
+    img{
+    height: 35px;
+    margin: .3rem .1rem 0 0;
+    opacity: .3;
+    width: auto;
+    }
+    img:hover {
+      opacity: .2;
+    }
+}
+.more-info {
+  a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .aside {
+    margin: 3rem 0 0;
+  }
+
+  .map-responsive {
+    height: 200px;
+  }
+}
+
+
+
+

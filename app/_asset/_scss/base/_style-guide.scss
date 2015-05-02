@@ -1,0 +1,46 @@
+.guide-container{
+margin: 0 auto;
+max-width: 800px;
+padding: 0px 20px;
+}
+.margin-container{
+  margin-bottom: 20px;
+}
+
+  h2.sg{
+    color: $teal;
+    font-family:$font-complementary;
+    @include font-size(20px);
+    margin: 20px 0px 0px 0px;
+    text-transform: none;
+}
+
+h4.sg-dosis{
+  font-family: $font-primary;
+  font-weight: $weight-regular;
+}
+
+h4.sg-ptsans{
+  font-family: $font-complementary;
+}
+
+h4.sg-ptserif{
+  font-family: $font-serif;
+}
+
+.sg-intro{
+  background-color: $bg-color;
+  width: 100%;
+      h2{
+        color:$c-Lightest;
+        font-family: $font-primary;
+        font-weight: $weight-semi-bold;
+        @include font-size(28px);
+        float: right;
+        margin-right: 50px;
+      }
+}
+
+.space{
+    margin-bottom: 40px;
+}

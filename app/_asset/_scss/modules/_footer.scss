@@ -1,0 +1,85 @@
+
+
+.bottom-abajo {
+    margin-top: 20px;
+
+}
+
+.bottom-abajo a {
+    border: solid 1px white;
+}
+
+footer {
+    height: 84px;
+    width: 100%;
+    background: #333;
+    float: left;
+    margin: 1px 0px;
+}
+
+.logo-down {
+    color: white;
+    font-family: $font-primary;
+    font-size: 30px;
+    font-weight: $weight-extra-bold;
+    line-height: 2.6em;
+    margin: 0 0 0 1.5rem;
+    width: 57%;
+    float: left;
+}
+
+.social-network {
+    display: block;
+    float: right;
+    margin: 20px 0px 0px 0px;
+    width: 200px;
+    border-left: solid 1px #eaeaea;
+}
+
+.social-network img {
+    width: auto;
+    height: auto;
+    margin: 0px 0px 0px 38px;
+}
+
+footer a {
+    color: white;
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: $weight-regular;
+}
+
+.link-down {
+    width: 150px;
+    float: left;
+    margin-top: 30px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .logo-down {
+        width: 54%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo-down {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .link-down {
+        float: right;
+        margin-right: 1.5rem;
+    }
+
+    .logo-down {
+        width: auto;
+    }
+
+    .social-network {
+        display: none;
+    }
+}
