@@ -1,0 +1,43 @@
+.banner{
+    padding: 50px 0px;
+
+        .text{
+            max-width: 700px;
+            text-align: center;
+            margin: 0 auto;
+            h1{
+             @include font-size(40px);
+                color: $c-Lightest;
+                font-weight: $weight-semi-bold;
+                line-height: 40px;
+                text-shadow: 2px 2px 1px $c-main-pink;
+            }
+
+            p{
+                @include font-size(18px);
+                color:$c-Lightest ;
+                text-shadow: 2px 2px 1px $c-main-gray;
+                padding: 15px 0px;
+
+                @include responsive($small-break) {
+                    @include font-size(16px);
+                }
+                }
+            }
+        @include responsive($small-break) {
+            padding: 60px 20px;
+            }
+            }
+
+.banner-buscar{
+    background: url("../images/busca_eventos.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.banner-crear{
+    background: url("../images/hazte_creador.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
