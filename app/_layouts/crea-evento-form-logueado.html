@@ -30,7 +30,7 @@
                 <option value="performance">Performance</option>
                 <option value="comida">Comida</option>
               </select>
-              <button href="#accordion2" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+              <button href="#accordion2" class="btn btn_euro js-temporarySaveButton" type="submit">GUARDAR</button>
             </form>
           </div>
         </dd>
@@ -162,12 +162,23 @@
       <script>
       $('.js-temporarySaveButton').click(function(event) {
         event.preventDefault();
-        var parentDD = $(this).parent().parent().parent();
-        parentDD.slideUp();
-        parentDD.prev().children().removeClass('close');
-        parentDD.next().next().slideDown();
-        parentDD.next().children().addClass('close');
+        var name = $('textarea[name="text"]');
+        var label = name.siblings('label');
+        var nameContent = $.trim(name.val());
+        if(nameContent == "") {
+          label.show();
+          name.addClass('error');
+        } else {
+          name.removeClass('error');
+          label.hide();
+            var parentDD = $(this).parent().parent().parent();
+            parentDD.slideUp();
+            parentDD.prev().children().removeClass('close');
+            parentDD.next().next().slideDown();
+            parentDD.next().children().addClass('close');
+        }
       });
+
       $('dt a').click(function(event) {
         event.preventDefault();
         $('dd:visible').prev().children().removeClass('close');
@@ -177,6 +188,17 @@
           $(this).parent().next().slideDown();
         } else {
           $(this).removeClass('close');
+        }
+      });
+
+      $('textarea[name="text"]').focusout(function() {
+        var name = $('textarea[name="text"]');
+        if(name.val() == "") {
+          name.addClass('error');
+          label.show();
+        } else {
+          name.removeClass('error');
+          label.hide();
         }
       });
       </script>
