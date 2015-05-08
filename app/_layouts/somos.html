@@ -52,8 +52,28 @@
                 var slideHeight = $('#slider ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
 
-                $('#slider').css({ width: slideWidth, height: slideHeight });
-                $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+                function setSliderDimensions() {
+                    $('#slider').css({ width: slideWidth, height: slideHeight });
+                    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+                };
+
+                setSliderDimensions();
+
+                // $(window).resize( function() {
+                //     $('#slider ul').css({
+                //         'height': 'auto',
+                //         'width': '100%'
+                //     });
+                //     $('#slider').css({
+                //         'height': 'auto',
+                //         'width': '100%'
+                //     });
+                //     var slideWidth = $('#slider ul li').width();
+                //     var slideHeight = $('#slider ul li').height();
+                //     var sliderUlWidth = slideCount * slideWidth;
+                //     setSliderDimensions();
+                // });
+
                 $('#slider ul li:last-child').prependTo('#slider ul');
 
                 function moveLeft() {
