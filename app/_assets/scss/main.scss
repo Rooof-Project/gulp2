@@ -129,6 +129,9 @@ $weight-extra-bold: 800;
 @import "modules/alerts";
 @import "modules/logueado";
 
+//font-awesome
+@import "font-awesome/font-awesome";
+
 
 // Reset default browser styles using Normalize
 @import "base/normalize";
