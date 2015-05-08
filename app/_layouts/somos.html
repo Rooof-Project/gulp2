@@ -8,101 +8,38 @@
         {% include header.html %}
 
         <div class="slider-wrap">
-            <div id="slider">
-                <a href="#" class="control_next">></a>
-                <a href="#" class="control_prev"><</a>
+            <div class="slider"><a class="arrow next"></a><a class="arrow prev"></a>
                 <ul>
-                    <li class="slider-second">
-                        <div class="slider-text">
-                            <h2>ROOOF ES</h2>
-                            <h1>CULTURA HOMEMADE</h1>
-                            <P>Conciertos, teatro, música, gastronomía, arte... Vete a casa del artista y vive el evento en primera persona, con un grupo reducido de gente y conoce al creador.</P>
-                        </div>
+                    <li data-slide-title="Bridge" class="active featureOne">
+                      <div class="content">
+                        <h2>ROOOF ES</h2>
+                        <h1>CULTURA HOMEMADE</h1>
+                        <P>Conciertos, teatro, música, gastronomía, arte... Vete a casa del artista y vive el evento en primera persona, con un grupo reducido de gente y conoce al creador.</P>
+                      </div>
                     </li>
-                    <li class="slider-third">
-                        <div class="slider-text">
-                            <h2>ROOOF ES</h2>
-                            <h1>AMIGOS HOMEMADE</h1>
-                            <P>Participa en una comunidad de gente apasionada por la cultura. Conoce gente con tus mismos intereses culturales, y colabora con artistas locales.</P>
-                        </div>
+                    <li class="featureTwo">
+                      <div class="content">
+                        <h2>ROOOF ES</h2>
+                        <h1>AMIGOS HOMEMADE</h1>
+                        <P>Participa en una comunidad de gente apasionada por la cultura. Conoce gente con tus mismos intereses culturales, y colabora con artistas locales.</P>
+                      </div>
                     </li>
-                    <li class="slider-first">
-                        <div class="slider-text">
-                            <h2>ROOOF ES</h2>
-                            <h1>PLANES HOMEMADE</h1>
-                            <p>Asiste a eventos creados por artistas emergentes y realizados en su propia casa.</p>
-                            <p>Entérate que está pasando en los tejados de Barcelona.</p>
-                        </div>
+                    <li class="featureThree">
+                      <div class="content">
+                        <h2>ROOOF ES</h2>
+                        <h1>PLANES HOMEMADE</h1>
+                        <p>Asiste a eventos creados por artistas emergentes y realizados en su propia casa.</p>
+                        <p>Entérate que está pasando en los tejados de Barcelona.</p>
+                      </div>
                     </li>
                 </ul>
             </div>
+            <script>
+            $('.slider').saSlider();
+            </script>
         </div>
 
-        <script type="text/javascript">
-            jQuery(document).ready(function ($) {
 
-                $('#checkbox').change(function(){
-                    setInterval(function () {
-                    moveRight();
-                    }, 3000);
-                });
-
-                var slideCount = $('#slider ul li').length;
-                var slideWidth = $('#slider ul li').width();
-                var slideHeight = $('#slider ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-
-                function setSliderDimensions() {
-                    $('#slider').css({ width: slideWidth, height: slideHeight });
-                    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-                };
-
-                setSliderDimensions();
-
-                // $(window).resize( function() {
-                //     $('#slider ul').css({
-                //         'height': 'auto',
-                //         'width': '100%'
-                //     });
-                //     $('#slider').css({
-                //         'height': 'auto',
-                //         'width': '100%'
-                //     });
-                //     var slideWidth = $('#slider ul li').width();
-                //     var slideHeight = $('#slider ul li').height();
-                //     var sliderUlWidth = slideCount * slideWidth;
-                //     setSliderDimensions();
-                // });
-
-                $('#slider ul li:last-child').prependTo('#slider ul');
-
-                function moveLeft() {
-                    $('#slider ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:last-child').prependTo('#slider ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
-
-                function moveRight() {
-                    $('#slider ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:first-child').appendTo('#slider ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
-
-                $('a.control_prev').click(function () {
-                    moveLeft();
-                });
-
-                $('a.control_next').click(function () {
-                    moveRight();
-                });
-            });
-        </script>
 
         <div class="push"></div>
 
@@ -176,3 +113,7 @@
     </body>
 
 </html>
+
+<script>
+    $('.slider').saSlider();
+</script>

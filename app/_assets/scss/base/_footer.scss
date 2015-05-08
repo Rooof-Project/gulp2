@@ -1,7 +1,7 @@
 @import '_variables';
 
 .crea ,.busca_banner{
-    background-image: url("../images/hazte_creador.jpg");
+    background: url("../images/hazte_creador.jpg") center;
     height: 310px;
     width: 100%;
     background-origin: content-box;
@@ -14,11 +14,11 @@
 }
 
 .crea {
-    background-image: url("../images/hazte_creador.jpg");
+    background: url("../images/hazte_creador.jpg") center;
 
 }
 .busca_banner {
-    background-image: url("../images/busca_eventos.jpg");
+    background-image: url("../images/busca_eventos.jpg") center;
 
 }
 

@@ -128,6 +128,7 @@ $weight-extra-bold: 800;
 @import "modules/banner";
 @import "modules/alerts";
 @import "modules/logueado";
+@import "modules/slider";
 
 //font-awesome
 @import "font-awesome/font-awesome";
@@ -146,7 +147,6 @@ $weight-extra-bold: 800;
 @import "pages/lista_eventos";
 @import "pages/ficha_evento";
 @import "pages/crea";
-@import "pages/somos";
 @import "pages/perfil";
 @import "pages/crea-form";
 // @import "pages/perfil";
