@@ -2789,7 +2789,6 @@ form {
   display: inline-block;
   overflow: hidden;
   width: 0;
-  height: 100%;
   vertical-align: top;
   -webkit-transition: width 0.8s cubic-bezier(0.5, 0, 0.5, 1);
   transition: width 0.8s cubic-bezier(0.5, 0, 0.5, 1); }
@@ -2837,7 +2836,7 @@ form {
 .slider ul > li > .content > h2 {
   display: inline-block;
   font-size: 48px;
-  color: white;
+  color: #fff;
   text-shadow: 1px 1px 2px black; }
 
 .slider ul > li > .content > h1 {
@@ -2861,7 +2860,7 @@ form {
   width: 570px; }
 
 @media screen and (max-width: 700px) {
-  .featureOne, .featureTwo, .featureThree {
+  .featureOne, .featureTwo, .featureThree, .slider {
     height: 580px; }
   .slider ul > li > .content > h2 {
     font-size: 35px; }
@@ -2871,7 +2870,7 @@ form {
     width: 425px; } }
 
 @media screen and (max-width: 600px) {
-  .featureOne, .featureTwo, .featureThree {
+  .featureOne, .featureTwo, .featureThree, .slider {
     height: 560px; }
   .slider ul > li > .content > h2 {
     font-size: 30px; }
@@ -2883,7 +2882,7 @@ form {
     width: 350px; } }
 
 @media screen and (max-width: 500px) {
-  .featureOne, .featureTwo, .featureThree {
+  .featureOne, .featureTwo, .featureThree, .slider {
     height: 540px; }
   .slider ul > li > .content > h2 {
     font-size: 25px; }
