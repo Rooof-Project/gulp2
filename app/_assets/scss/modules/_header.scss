@@ -275,9 +275,11 @@ header {
                   p.p-complementary{
                     font-size: 14px;
                   }
-                  a{
+                  button{
                     font-family: $font-complementary;
+                    float: none;
                     color:$c-main-pink;
+                    margin: 0 auto;
                     text-decoration: underline;
                     font-size: 14px;
                   }

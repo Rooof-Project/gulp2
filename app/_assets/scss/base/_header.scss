@@ -268,7 +268,7 @@ header {
           line-height: 0em;
       }
 
-      .pop p a, .pop-log p a {
+      .pop p button, .pop-log p button {
           color: #333;
           text-decoration: underline;
       }
@@ -308,7 +308,7 @@ header {
           margin-top: 25px;
       }
 
-      .inicia-sesion p a, .inicia-sesion1 p a {
+      .inicia-sesion p button, .inicia-sesion1 p button {
           text-decoration: underline;
           color: $c-main-pink;
       }
