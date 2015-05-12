@@ -142,6 +142,7 @@
                 <script type="text/javascript">
                     $(document).ready(function () {
                         $("button.registro").click(function () {
+                            $(".pop-log").fadeOut(100);
                             $(".pop").fadeIn(300);
                             positionPopup();
                         });
@@ -151,6 +152,7 @@
                         });
 
                         $("button.log-in").click(function () {
+                            $(".pop").fadeOut(100);
                             $(".pop-log").fadeIn(300);
                             positionPopup();
                          });
