@@ -68,17 +68,17 @@
                         <form>
                             <div class="field">
                                 <!-- <label for="email">Email</label> -->
-                                <input type="email" name="email" placeholder="Email">
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="field">
                                 <!-- <label for="password">Contraseña</label> -->
-                                <input type="password" name="password" placeholder="Contraseña">
+                                <input type="password" name="password" placeholder="Contraseña" required>
+                            </div>
+                            <p class="p-complementary">¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
+                            <div class="button__wrap">
+                                <a href="index-logueado.html" type="submit"><button class="btn">Iniciar sesión</button></a>
                             </div>
                         </form>
-                        <p class="p-complementary">¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
-                        <div class="button__wrap">
-                            <a href="index-logueado.html"><button class="btn">Iniciar sesión</button></a>
-                        </div>
 
                         <div class="inicia-sesion1">
                             <div class="footer-reg titulo">
@@ -116,21 +116,21 @@
                         <form class="reg">
                             <div class="field">
                                 <!-- <label for="nombre">Nombre</label> -->
-                                <input type="text" name="palabra" placeholder="Nombre">
+                                <input type="text" name="palabra" placeholder="Nombre" required>
                             </div>
                             <div class="field">
                                 <!-- <label for="email">Email</label> -->
-                                    <input type="email" name="email" placeholder="Email">
+                                    <input type="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="field">
                                 <!-- <label for="password">Contraseña</label> -->
-                                <input type="password" name="password" placeholder="Contraseña">
+                                <input type="password" name="password" placeholder="Contraseña" required>
+                            </div>
+                            <p class="p-complementary">Al registrarte aceptas las <a href="">condiciones legales</a>.</p>
+                            <div class="button__wrap">
+                                <a href="index-logueado.html" type="submit"><button class="btn registrarse">Registrarse</button></a>
                             </div>
                         </form>
-                        <p class="p-complementary">Al registrarte aceptas las <a href="">condiciones legales</a>.</p>
-                        <div class="button__wrap">
-                            <a href="index-logueado.html"><button class="btn registrarse">Registrarse</button></a>
-                        </div>
                         <div class="inicia-sesion">
                             <div class="footer-reg titulo">
                                 <p class="p-complementary">¿Ya tienes una cuenta en ROOOF?</p>
@@ -142,8 +142,8 @@
                 <script type="text/javascript">
                     $(document).ready(function () {
                         $("button.registro").click(function () {
-                            $(".pop-log").fadeOut(100);
-                            $(".pop").fadeIn(300);
+                            $(".pop-log").fadeOut(200);
+                            $(".pop").fadeIn(500);
                             positionPopup();
                         });
 
@@ -152,8 +152,8 @@
                         });
 
                         $("button.log-in").click(function () {
-                            $(".pop").fadeOut(100);
-                            $(".pop-log").fadeIn(300);
+                            $(".pop").fadeOut(200);
+                            $(".pop-log").fadeIn(500);
                             positionPopup();
                          });
 
