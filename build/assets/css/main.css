@@ -5081,7 +5081,8 @@ table {
     width: 100%; } }
 
 section.lista-eventos {
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  padding: 0 0 50px; }
   section.lista-eventos ul {
     padding-left: 0; }
 
@@ -5317,7 +5318,8 @@ section.lista-eventos {
 
 @media screen and (max-width: 642px) {
   .aside {
-    margin: 3rem 0 0; }
+    margin: 3rem 0 0;
+    padding: 0px 5%; }
   .map-responsive {
     height: 200px; } }
 
