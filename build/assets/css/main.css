@@ -5436,6 +5436,10 @@ section.perfil-eventos {
 
 .perfil-eventos ul {
   padding-left: 0; }
+.perfil-eventos .mas-evento {
+  list-style: none; }
+  .perfil-eventos .mas-evento a {
+    text-decoration: none; }
 .perfil-eventos .lista-evento-item {
   background-color: #fff;
   margin-bottom: 25px;
@@ -5450,7 +5454,7 @@ section.perfil-eventos {
   margin-top: 50px; }
 
 @media screen and (max-width: 1024px) {
-  .perfil-eventos li:last-child {
+  .perfil-eventos li:nth-child(2) {
     display: none !important; } }
 
 @media screen and (max-width: 640px) {
@@ -5480,7 +5484,7 @@ section.perfil-eventos {
 .btn-box {
   background-color: transparent;
   border: solid 6px #ff3766;
-  height: 320px;
+  height: 315px;
   margin-bottom: 25px;
   position: relative;
   overflow: hidden; }
@@ -5496,7 +5500,7 @@ span.mas {
     color: #ff3766; }
     span.mas h1:hover, span.mas span.mas:hover {
       text-decoration: none;
-      color: white; }
+      opacity: .5; }
 
 @media screen and (max-width: 640px) {
   section.perfil-user {

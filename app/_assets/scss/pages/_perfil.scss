@@ -48,6 +48,14 @@ section.perfil-eventos{
         padding-left: 0;
       }
 
+    .mas-evento {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
     .lista-evento-item{
         background-color: $c-Lightest;
         margin-bottom: 25px;
@@ -68,7 +76,7 @@ section.perfil-eventos{
 
 @media screen and (max-width: 1024px) {
  .perfil-eventos{
-    li:last-child {
+    li:nth-child(2) {
         display: none !important;
         }
     }
@@ -114,7 +122,7 @@ section.perfil-eventos{
 .btn-box{
     background-color: transparent;
     border: solid 6px $c-main-pink;
-    height: 320px;
+    height: 315px;
     margin-bottom: 25px;
     position: relative;
     overflow: hidden;
@@ -133,7 +141,7 @@ span.mas{
         color: $c-main-pink;
         &:hover{
             text-decoration: none;
-            color: white;
+            opacity: .5;
         }
     }
 }
