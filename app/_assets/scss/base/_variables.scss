@@ -22,8 +22,14 @@ $green: #49b000;
 $orange:  #ff8500;
 $red:     #ff4136;
 
+// Alerts
+
+$success: #66cccc;
+$error: $red;
+
 // Responsive breakpoints
 $small-break: 480px;
+$medium-break: 640px;
 $big-break: 730px;
 
 // Margin
@@ -35,4 +41,3 @@ $br: 5px; // Border-radius
 $btn-br: 5px; // Button border-radius
 $padding: 40px; // Padding and margins
 $line-height: 44px; // Consistent height for buttons, inputs etc.
-

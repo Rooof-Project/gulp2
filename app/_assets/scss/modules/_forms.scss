@@ -54,10 +54,10 @@ form {
   }
     // text fixed before placeholder
   .prefilled {
-  position: absolute;
-  top: 36px;
-  left: 20px;
-}
+    position: absolute;
+    top: 36px;
+    left: 20px;
+  }
 
   // Required label
   .is-required {
@@ -66,15 +66,14 @@ form {
 
   #facebook,
   #twitter {
-  padding-left: 7.30em;
-}
+    padding-left: 7.30em;
+  }
 
  // Placeholder styles
   input[placeholder],
   textarea[placeholder] {
     @extend .p-complementary;
-    -webkit-font-smoothing: antialiased;
-
+      -webkit-font-smoothing: antialiased;
     }
 
   // Validation, add error class to the item div
@@ -96,3 +95,4 @@ form {
       border-color: $error;
     }
   }
+}

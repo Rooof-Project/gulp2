@@ -10,7 +10,7 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5, h6, p, blockquote, blockquote, pre, hr, dl, dd, ol, ul, figure {
+body, h1, span.mas, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5, h6, p, blockquote, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
@@ -29,7 +29,7 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5, h6, p, blockquote, blockquote, pre, ul, ol, dl, figure, .highlight {
+h1, span.mas, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5, h6, p, blockquote, blockquote, pre, ul, ol, dl, figure, .highlight {
   margin-bottom: 15px; }
 
 /**
@@ -60,7 +60,7 @@ li > ul, li > ol {
 /**
  * Headings
  */
-h1, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5, h6 {
+h1, span.mas, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5, h6 {
   font-weight: 300; }
 
 /**
@@ -451,13 +451,13 @@ body {
 * {
   margin: 0; }
 
-h1, .h1, h2, .h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
+h1, span.mas, .h1, h2, .h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
   font-family: "Dosis", sans-serif;
   margin-top: 0;
   margin-bottom: 0.5rem;
   text-transform: uppercase; }
 
-h1, .h1 {
+h1, span.mas, .h1 {
   color: #333;
   font-weight: 400;
   line-height: 2.4rem;
@@ -522,7 +522,7 @@ p, blockquote, .p {
   line-height: 1.5rem;
   margin-bottom: 10px; }
 
-.p-complementary {
+.p-complementary, form .hint, form .prefilled, form input[placeholder], form textarea[placeholder] {
   color: #333;
   font-family: "PT Sans", sans-serif;
   line-height: 1.4rem;
@@ -578,7 +578,7 @@ a {
   padding: 0 6%; }
   .titulo * {
     margin: 0; }
-  .titulo h1, .titulo .h1 {
+  .titulo h1, .titulo span.mas, .titulo .h1 {
     margin-bottom: .5rem; }
 
 @media screen and (max-width: 480px) {
@@ -601,9 +601,9 @@ hr {
   margin-bottom: 20px; }
 
 @media screen and (max-width: 480px) {
-  h1, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5 {
+  h1, span.mas, h2, h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, h4, h5 {
     margin-bottom: 10px; }
-  h1, .h1 {
+  h1, span.mas, .h1 {
     font-size: 26px;
     line-height: 2rem; }
   h2, .h2, .h2-complementary {
@@ -2386,7 +2386,7 @@ header {
       header .wrap nav ul.right .footer-reg {
         padding: 20px;
         margin-bottom: 0px; }
-        header .wrap nav ul.right .footer-reg p.p-complementary, header .wrap nav ul.right .footer-reg blockquote.p-complementary {
+        header .wrap nav ul.right .footer-reg p.p-complementary, header .wrap nav ul.right .footer-reg blockquote.p-complementary, header .wrap nav ul.right .footer-reg form blockquote.hint, form header .wrap nav ul.right .footer-reg blockquote.hint, header .wrap nav ul.right .footer-reg form blockquote.prefilled, form header .wrap nav ul.right .footer-reg blockquote.prefilled, header .wrap nav ul.right .footer-reg form p.hint, form header .wrap nav ul.right .footer-reg p.hint, header .wrap nav ul.right .footer-reg form p.prefilled, form header .wrap nav ul.right .footer-reg p.prefilled {
           font-size: 14px; }
         header .wrap nav ul.right .footer-reg button {
           font-family: "PT Sans", sans-serif;
@@ -2551,13 +2551,59 @@ footer a {
     display: inline-block;
     margin-bottom: 10px; } }
 
+label {
+  display: block;
+  margin-bottom: 5px; }
+
+input[type=text], input[type=email], input[type=phone], input[type=password], input[type=number], input[type=search], textarea {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 44px;
+  outline: none;
+  padding: 5px 10px;
+  width: 300px; }
+  input[type=text]:focus, input[type=email]:focus, input[type=phone]:focus, input[type=password]:focus, input[type=number]:focus, input[type=search]:focus, textarea:focus {
+    border-color: #ff3766; }
+  input[type=text].full-width, input[type=email].full-width, input[type=phone].full-width, input[type=password].full-width, input[type=number].full-width, input[type=search].full-width, textarea.full-width {
+    width: 100%; }
+
+textarea {
+  height: 132px; }
+
+form {
+  margin-bottom: 20px; }
+  form .field {
+    margin-bottom: 20px; }
+  form .hint, form .prefilled {
+    -webkit-font-smoothing: antialiased;
+    color: #8e8e8e;
+    margin-top: 5px; }
+  form .prefilled {
+    position: absolute;
+    top: 36px;
+    left: 20px; }
+  form .is-required {
+    font-style: italic; }
+  form #facebook, form #twitter {
+    padding-left: 7.3em; }
+  form input[placeholder], form textarea[placeholder] {
+    -webkit-font-smoothing: antialiased; }
+  form .has-error .error-description {
+    font-family: "PT Sans", sans-serif;
+    color: #ff4136;
+    margin-top: 5px; }
+  form .has-error input[type=text], form .has-error input[type=email], form .has-error input[type=phone], form .has-error input[type=password], form .has-error input[type=number], form .has-error input[type=search], form .has-error textarea {
+    border-color: #ff4136; }
+
 .banner {
   padding: 50px 0px; }
   .banner .text {
     max-width: 700px;
     text-align: center;
     margin: 0 auto; }
-    .banner .text h1 {
+    .banner .text h1, .banner .text span.mas {
       font-size: 40px;
       font-size: 2.5rem;
       color: #fff;
@@ -2611,7 +2657,7 @@ footer a {
     background: white;
     border-color: #666666;
     color: black; }
-  .alert p, .alert blockquote, .alert h1, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
+  .alert p, .alert blockquote, .alert h1, .alert span.mas, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
     font-family: "PT Sans", sans-serif; }
   .alert p:last-child, .alert blockquote:last-child {
     margin-bottom: 0; }
@@ -2790,7 +2836,7 @@ footer a {
   color: #fff;
   text-shadow: 1px 1px 2px black; }
 
-.slider ul > li > .content > h1 {
+.slider ul > li > .content > h1, .slider ul > li > .content > span.mas {
   color: #fff;
   font-size: 70px;
   margin-bottom: 2rem;
@@ -2810,7 +2856,7 @@ footer a {
     height: 580px; }
   .slider ul > li > .content > h2 {
     font-size: 35px; }
-  .slider ul > li > .content > h1 {
+  .slider ul > li > .content > h1, .slider ul > li > .content > span.mas {
     font-size: 50px; }
   .slider ul > li > .content > p, .slider ul > li > .content > blockquote {
     width: 425px; } }
@@ -2820,7 +2866,7 @@ footer a {
     height: 560px; }
   .slider ul > li > .content > h2 {
     font-size: 30px; }
-  .slider ul > li > .content > h1 {
+  .slider ul > li > .content > h1, .slider ul > li > .content > span.mas {
     margin-bottom: 1rem;
     font-size: 40px; }
   .slider ul > li > .content > p, .slider ul > li > .content > blockquote {
@@ -2832,7 +2878,7 @@ footer a {
     height: 540px; }
   .slider ul > li > .content > h2 {
     font-size: 25px; }
-  .slider ul > li > .content > h1 {
+  .slider ul > li > .content > h1, .slider ul > li > .content > span.mas {
     margin-bottom: 1rem;
     font-size: 30px; }
   .slider ul > li > .content > p, .slider ul > li > .content > blockquote {
@@ -4632,7 +4678,7 @@ a:active, a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
+h1, span.mas {
   font-size: 2em; }
 
 /**
@@ -4878,7 +4924,7 @@ table {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
 
-.top-heading h1 {
+.top-heading h1, .top-heading span.mas {
   color: white;
   line-height: 2.3rem;
   font-size: 70px;
@@ -5346,6 +5392,352 @@ section.testimonios {
   .como-crea {
     height: 30rem;
     padding: 0; } }
+
+section.perfil-user {
+  padding-top: 120px; }
+
+.perfil-user-img {
+  margin: 0 auto;
+  height: 150px;
+  width: 150px; }
+  .perfil-user-img img {
+    border-radius: 50%; }
+
+.contact-user {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px; }
+
+.perfil-rrss img {
+  height: 25px;
+  opacity: .3;
+  width: auto; }
+.perfil-rrss img:hover {
+  opacity: .2; }
+
+section.perfil-eventos {
+  background-color: #eaeaea; }
+
+.perfil-user-container {
+  padding-bottom: 30px; }
+
+.perfil-info-item {
+  margin-left: 20px;
+  text-align: center; }
+
+.perfil-info-item-border {
+  border-right: solid 1px #bbbaba;
+  border-left: solid 1px #bbbaba;
+  margin-left: 20px;
+  text-align: center; }
+
+.perfil-eventos ul {
+  padding-left: 0; }
+.perfil-eventos .lista-evento-item {
+  background-color: #fff;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden; }
+  .perfil-eventos .lista-evento-item .evento-info {
+    padding: 0px 15px 5px 15px;
+    height: 80px;
+    overflow: hidden; }
+
+.eventos-creados {
+  margin-top: 50px; }
+
+@media screen and (max-width: 1024px) {
+  .perfil-eventos li:last-child {
+    display: none !important; } }
+
+@media screen and (max-width: 640px) {
+  .perfil-info-item {
+    margin-left: 10px;
+    text-align: center; }
+  .perfil-info-item-border {
+    border-right: solid 1px #bbbaba;
+    border-left: solid 1px #bbbaba;
+    margin-left: 20px;
+    text-align: center; }
+  .perfil-description {
+    padding: 20px 20px 0px 20px; }
+    .perfil-description h1, .perfil-description span.mas {
+      text-align: center; }
+    .perfil-description p, .perfil-description blockquote {
+      text-align: left; } }
+
+.perfil-user-vacio {
+  padding-bottom: 40px; }
+
+.btn-editar {
+  position: absolute;
+  right: 0;
+  z-index: 999; }
+
+.btn-box {
+  background-color: transparent;
+  border: solid 6px #ff3766;
+  height: 320px;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden; }
+
+#btn-box {
+  text-decoration: none; }
+
+span.mas {
+  font-size: 90px;
+  text-align: center; }
+  span.mas h1, span.mas span.mas {
+    margin-top: 100px;
+    color: #ff3766; }
+    span.mas h1:hover, span.mas span.mas:hover {
+      text-decoration: none;
+      color: white; }
+
+@media screen and (max-width: 640px) {
+  section.perfil-user {
+    padding-top: 80px; }
+  .btn-editar {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px; } }
+
+/* crea-evento-form */
+.wrap-wider {
+  margin: 0px auto;
+  max-width: 1050px;
+  width: 100%; }
+
+.crea-form {
+  background-color: #eaeaea;
+  padding-top: 57px;
+  width: 100%; }
+
+.atras {
+  background: #333;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  margin: 0px;
+  padding-top: 18px; }
+  .atras p, .atras blockquote {
+    color: white;
+    font-family: "Dosis", sans-serif; }
+  .atras a {
+    color: white;
+    font-size: 14px;
+    margin: 0 15px 0 1.5rem; }
+
+.accordion dd {
+  font-size: 1em;
+  line-height: 1.5em; }
+
+.tab-content {
+  background-color: #fff;
+  margin: 0 0 1rem;
+  text-align: center; }
+  .tab-content form {
+    padding: 2rem 0;
+    position: relative; }
+    .tab-content form input {
+      background-color: #eaeaea;
+      border-radius: 0;
+      text-align: center;
+      font-size: 18px;
+      height: 2.5rem;
+      margin: 0 auto 2rem;
+      width: 15rem; }
+    .tab-content form .euro {
+      padding: 0 0 0 7rem; }
+    .tab-content form .persona {
+      padding: 5px 0 0 9.5rem;
+      font-size: 20px;
+      text-transform: lowercase; }
+    .tab-content form .btn_euro {
+      margin: 1rem auto 2rem; }
+    .tab-content form .price-number {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      right: 0;
+      width: 4rem; }
+      .tab-content form .price-number:after {
+        content: 'mmmm';
+        color: black;
+        font-size: 18px;
+        float: right; }
+    .tab-content form .add-photo {
+      border: none;
+      background-color: #fff;
+      display: inherit;
+      font-size: 1rem;
+      margin: 0 auto;
+      width: 12rem; }
+  .tab-content textarea {
+    border-radius: none;
+    max-width: 400px;
+    height: 150px;
+    font-size: 16px;
+    width: 90%; }
+  .tab-content .form-description {
+    color: #8e8e8e;
+    font-size: 16px; }
+  .tab-content p, .tab-content blockquote {
+    margin: 2rem auto;
+    max-width: 28rem;
+    width: 80%; }
+  .tab-content .direction {
+    height: 50px;
+    display: inherit;
+    margin: 0 auto; }
+  .tab-content select {
+    display: inherit;
+    max-width: 100px;
+    margin: 2rem auto 1rem;
+    width: 90%; }
+
+.accordion {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
+  width: 90%; }
+
+.accordionTitle {
+  background-color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: .8rem 2em;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: background-color 0.5s ease-in-out;
+          transition: background-color 0.5s ease-in-out;
+  border-bottom: 3px solid #f2f2f2; }
+  .accordionTitle:before {
+    color: #ff3766;
+    content: "+";
+    font-size: 1.5em;
+    line-height: 1em;
+    float: right;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out; }
+  .accordionTitle.close:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .accordionTitle:hover {
+    background-color: #e6e6e6;
+    color: #ff3766; }
+
+.accordionTitleActive, .accordionTitle.is-expanded {
+  background-color: #e6e6e6; }
+  .accordionTitleActive:before, .accordionTitle.is-expanded:before {
+    -webkit-transform: rotate(-225deg);
+        -ms-transform: rotate(-225deg);
+            transform: rotate(-225deg); }
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  display: none;
+  -webkit-transition: max-height 1s;
+          transition: max-height 1s; }
+  @media screen and (min-width: 48em) {
+    .accordionItem {
+      -webkit-transition: max-height 0.5s;
+              transition: max-height 0.5s; } }
+
+.animateIn {
+  -webkit-animation: accordionIn 0.65s normal ease-in-out both 1;
+          animation: accordionIn 0.65s normal ease-in-out both 1; }
+
+.animateOut {
+  -webkit-animation: accordionOut 0.75s alternate ease-in-out both 1;
+          animation: accordionOut 0.75s alternate ease-in-out both 1; }
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg); } }
+
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg); } }
+
+.error {
+  border: solid 1px #ff3766; }
+
+section.perfil-editar {
+  background: url(../img/pattern-backg.png) repeat;
+  background-color: #eaeaea; }
+  section.perfil-editar .perfil-user-img {
+    height: 150px;
+    float: none;
+    margin: 0 auto;
+    width: 150px; }
+  section.perfil-editar img {
+    border-radius: 50%; }
+
+.form__wrap {
+  background-color: white;
+  margin: 0 auto;
+  padding: 60px; }
+
+.titulo_form__wrap {
+  padding: 40px 0px 20px 0px; }
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-top: 0px solid transparent;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid white;
+  margin: 0 auto; }
+
+.titulo_form__wrap_first {
+  padding: 10px 0px 20px 0px; }
 
 html, body {
   font-family: "PT Sans", sans-serif;
