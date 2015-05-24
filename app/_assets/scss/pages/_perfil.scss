@@ -1,0 +1,151 @@
+section.perfil-user{
+    padding-top: 120px;
+    }
+
+.perfil-user-img{
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+    img{
+      border-radius: 50%;
+        }
+    }
+.contact-user{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+}
+.perfil-rrss{
+    img{
+    height: 25px;
+    opacity: .3;
+    width: auto;
+    }
+    img:hover {
+      opacity: .2;
+    }
+}
+section.perfil-eventos{
+    background-color: $bg-color;
+}
+.perfil-user-container{
+    padding-bottom: 30px;
+}
+.perfil-info-item {
+    margin-left: 20px;
+    text-align: center;
+
+}
+.perfil-info-item-border {
+    border-right: solid 1px $c-dark-gray;
+    border-left: solid 1px $c-dark-gray;
+    margin-left: 20px;
+    text-align: center;
+    }
+
+// grid eventos perfil
+.perfil-eventos{
+    ul{
+    padding-left: 0;
+  }
+.lista-evento-item{
+    background-color: $c-Lightest;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+        .evento-info{
+        padding: 0px 15px 5px 15px;
+        height: 80px;
+        overflow: hidden;
+        }
+    }
+}
+
+.eventos-creados{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+ .perfil-eventos{
+
+    li:last-child {
+        display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .perfil-info-item {
+    margin-left: 10px;
+    text-align: center;
+    }
+
+ .perfil-info-item-border {
+    border-right: solid 1px $c-dark-gray;
+    border-left: solid 1px $c-dark-gray;
+    margin-left: 20px;
+    text-align: center;
+
+    }
+.perfil-description{
+    padding: 20px 20px 0px 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}
+
+.perfil-user-vacio{
+    padding-bottom: 40px;
+}
+
+// perfil login self view
+
+.btn-editar{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    }
+
+.btn-box{
+    background-color: transparent;
+    border: solid 6px $c-main-pink;
+    height: 320px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+
+    }
+#btn-box{
+    text-decoration: none;
+
+}
+span.mas{
+    @extend h1;
+    font-size: 90px;
+
+    text-align: center;
+    h1{
+        margin-top: 100px;
+        color: $c-main-pink;
+        &:hover{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@include responsive($medium-break) {
+
+    section.perfil-user{
+        padding-top: 80px;
+        }
+    .btn-editar{
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }

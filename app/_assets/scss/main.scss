@@ -149,8 +149,7 @@ $weight-extra-bold: 800;
 @import "pages/crea";
 @import "pages/perfil";
 @import "pages/crea-form";
-// @import "pages/perfil";
-// @import "pages/perfil_editar";
+@import "pages/perfil_editar";
 
 
 
@@ -213,6 +212,12 @@ padding:0px 1rem;
 .divider{
     height: 2px;
     background-color: $grey;
+    margin: 20px 0;
+}
+
+.divider-dark{
+    height: 1px;
+    background-color: $c-dark-gray;
     margin: 20px 0;
 }
 

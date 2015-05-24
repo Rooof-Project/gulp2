@@ -1,0 +1,43 @@
+// perfil-editar
+
+section.perfil-editar{
+    background: url(../img/pattern-backg.png) repeat;
+    background-color: $bg-color;
+
+    .perfil-user-img{
+        height: 150px;
+        float: none;
+        margin: 0 auto;
+        width: 150px;
+    }
+    img{
+        border-radius: 50%;
+    }
+}
+
+.form__wrap{
+    background-color: white;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.titulo_form__wrap{
+    padding: 40px 0px 20px 0px;
+}
+
+
+.triangulo{
+     width: 0;
+     height: 0;
+     border-right: 30px solid transparent;
+     border-top: 0px solid transparent;
+     border-left: 30px solid transparent;
+     border-bottom: 30px solid white;
+     margin: 0 auto;
+     }
+
+
+.titulo_form__wrap_first{
+    padding: 10px 0px 20px 0px;
+}
+

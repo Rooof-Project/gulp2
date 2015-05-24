@@ -5634,6 +5634,11 @@ section, .section {
   background-color: #eaeaea;
   margin: 20px 0; }
 
+.divider-dark {
+  height: 1px;
+  background-color: #bbbaba;
+  margin: 20px 0; }
+
 .creador-item {
   margin-bottom: 30px; }
 
