@@ -150,3 +150,18 @@ span.mas{
         margin-bottom: 10px;
     }
 }
+
+.eventos-disfrutados,
+.eventos-creados {
+    .titulo {
+        margin-bottom: 30px;
+
+        & > .h2-secondary {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.eventos-disfrutados {
+    padding-bottom: 20px;
+}

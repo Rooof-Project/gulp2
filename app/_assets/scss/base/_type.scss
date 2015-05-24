@@ -192,22 +192,7 @@ padding: 0 6%;
   .titulo {
     padding: 0px 5px;
   }
-  }
-
-
-//pre {
- // background: #222;
- // color: #fff;
- // display: block;
- // font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
- // font-size: 13px;
- // line-height: 20px;
- // margin: 0 0 $padding/2;
- // padding: 10px;
- // border-radius: $br;
- // word-break: break-all;
- // word-wrap: break-word;
-//}
+}
 
 pre {
   border-radius:$br;
@@ -231,17 +216,12 @@ hr{
 // @include responsive($big-break) {
 // }
 @include responsive($small-break) {
-  // body {
-  //   font-size: 14px;
-  // }
-
   h1,
   h2,
   h3,
   h4,
   h5 {
     margin-bottom: 10px;
-
   }
 
   h1,
@@ -256,26 +236,5 @@ hr{
     font-size: 21px;
     line-height: 1.6rem;
   }
-
-  // h3,
-  // .h3,
-  // .h3-complementary {
-  // }
-
-  // h4,
-  // .h4,
-  // .h4-complementary,
-  // h5,
-  // .h5,
-  // .h5-complementary,
-  // h6,
-  // .h6,
-  // .h6-complementary,
-  // p,
-  // .p-complementary,
-  // ul,
-  // ol {
-  //   font-size: 16px;
-  // }
 }
 

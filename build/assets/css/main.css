@@ -2662,8 +2662,8 @@ form {
   .alert p:last-child, .alert blockquote:last-child {
     margin-bottom: 0; }
 
-.sregistro {
-  color: #ff3766;
+header .sregistro {
+  color: #ff3766 !important;
   cursor: pointer;
   border: none;
   background: none;
@@ -2677,14 +2677,13 @@ form {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
-
-.sregistro:before {
-  content: url('../images/avatar_perfil_user.png');
-  /* with class ModalCarrot ??*/
-  padding-right: 10px;
-  position: absolute;
-  top: -12px;
-  left: -50px; }
+  header .sregistro:before {
+    content: url('../images/avatar_perfil_user.png');
+    /* with class ModalCarrot ??*/
+    padding-right: 10px;
+    position: absolute;
+    top: -12px;
+    left: -50px; }
 
 .slider-wrap {
   display: inline;
@@ -5090,7 +5089,7 @@ table {
 
 section.lista-eventos {
   background-color: #eaeaea;
-  padding: 0 0 50px; }
+  padding: auto 0 50px; }
   section.lista-eventos ul {
     padding-left: 0; }
 
@@ -5502,6 +5501,14 @@ span.mas {
     position: relative;
     text-align: center;
     margin-bottom: 10px; } }
+
+.eventos-disfrutados .titulo, .eventos-creados .titulo {
+  margin-bottom: 30px; }
+  .eventos-disfrutados .titulo > .h2-secondary, .eventos-creados .titulo > .h2-secondary {
+    margin-bottom: 20px; }
+
+.eventos-disfrutados {
+  padding-bottom: 20px; }
 
 /* crea-evento-form */
 .wrap-wider {
