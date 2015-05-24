@@ -1,15 +1,83 @@
----
-button_url: 'perfil-logueado.html'
----
-
 <!DOCTYPE HTML>
 <html>
 
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ROOOF</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/perfil-logueado.html">
+    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/production.min.js"></script>
+
+    <!-- the next three script links are for the slider -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://yaireo.github.io/saSlider/jquery.touch.js"></script>
+    <script src="http://yaireo.github.io/saSlider/saSlider.js"></script>
+
+</head>
+
+
+
 
     <body>
 
-        {% include header.html %}
+        <header>
+    <div class="wrap">
+        <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
+        <nav>
+            <ul class="left">
+                <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+                <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+                <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            </ul>
+            <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
+        </nav>
+
+        <div class="nav-hamburger">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <a href="somos-logueado.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+            <a href="lista-eventos-logueado.html"><li>Busca un evento</li></a>
+            <a href="crea-logueado.html"><li>Crea tu evento</li></a>
+            <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
+            <a href="inicio-sesion.html"><li>Regístrate</li></a>
+        </ul>
+    </div>
+
+    <script>
+        $( ".cross" ).hide();
+        $( ".menu" ).hide();
+        $( ".hamburger" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+
+        $( ".cross" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+            });
+        });
+    </script>
+</header>
+
 
 
 <section class="perfil-user section-intro">
@@ -295,7 +363,19 @@ button_url: 'perfil-logueado.html'
   </div>
 </section>
 
-{% include footer.html %}
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down">
+            <a href="mailto:hellorooof@gmail.com">contacta con nosotros</a>
+        </div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="../assets/images/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="../assets/images/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 

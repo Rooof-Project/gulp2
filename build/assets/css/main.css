@@ -2596,6 +2596,10 @@ form {
     margin-top: 5px; }
   form .has-error input[type=text], form .has-error input[type=email], form .has-error input[type=phone], form .has-error input[type=password], form .has-error input[type=number], form .has-error input[type=search], form .has-error textarea {
     border-color: #ff4136; }
+  form .button__wrap > .btn {
+    color: #fff; }
+    form .button__wrap > .btn:hover {
+      color: #ff3766; }
 
 .banner {
   padding: 50px 0px; }

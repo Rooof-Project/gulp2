@@ -95,4 +95,14 @@ form {
       border-color: $error;
     }
   }
+
+  .button__wrap {
+    & > .btn {
+      color: $c-Lightest;
+
+      &:hover {
+        color: $c-main-pink;
+      }
+    }
+  }
 }
