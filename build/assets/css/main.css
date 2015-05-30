@@ -5179,6 +5179,24 @@ section.lista-eventos {
     width: 35px;
     height: 35px; } }
 
+.search-form {
+  display: block;
+  margin: 0 auto 2rem;
+  text-align: center; }
+  .search-form .search {
+    border: solid 1px #ff3766;
+    border-radius: 8px 0 0 8px;
+    color: #ff3766;
+    font-size: 20px;
+    height: 47px;
+    padding: 0 1rem;
+    max-width: 600px;
+    width: 60%; }
+  .search-form > .btn {
+    border-radius: 0 8px 8px 0;
+    padding-top: 8px;
+    margin-left: -5px; }
+
 .ficha-evento {
   background-color: #eaeaea; }
 
@@ -5310,14 +5328,17 @@ section.lista-eventos {
 .compartir__wrap {
   float: left;
   border-top: solid 4px #ff3766;
-  margin-top: 20px;
-  width: 80px; }
+  margin-top: 20px; }
   .compartir__wrap img {
+    border-radius: 5px;
     height: 35px;
     margin: .3rem .1rem 0 0;
-    width: auto; }
+    width: auto;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in; }
   .compartir__wrap img:hover {
-    opacity: .7; }
+    border-radius: 50%; }
 
 .more-info a {
   display: block;
@@ -5412,11 +5433,14 @@ section.perfil-user {
   margin-top: 15px; }
 
 .perfil-rrss img {
+  border-radius: 3px;
   height: 25px;
-  opacity: .3;
-  width: auto; }
+  width: auto;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in; }
 .perfil-rrss img:hover {
-  opacity: .2; }
+  border-radius: 50%; }
 
 section.perfil-eventos {
   background-color: #eaeaea; }
@@ -5439,7 +5463,9 @@ section.perfil-eventos {
 .perfil-eventos .mas-evento {
   list-style: none; }
   .perfil-eventos .mas-evento a {
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; }
 .perfil-eventos .lista-evento-item {
   background-color: #fff;
   margin-bottom: 25px;
@@ -5723,6 +5749,9 @@ span.mas {
 .error {
   border: solid 1px #ff3766; }
 
+.volver-a-perfil-personal {
+  display: block; }
+
 section.perfil-editar {
   background: url(../img/pattern-backg.png) repeat;
   background-color: #eaeaea; }
@@ -5753,6 +5782,32 @@ section.perfil-editar {
 
 .titulo_form__wrap_first {
   padding: 10px 0px 20px 0px; }
+
+.feature {
+  background: #fff;
+  margin: 0 auto;
+  padding: 3rem 0; }
+  .feature > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+    width: 80%; }
+
+.details {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 3rem 10%; }
+  .details > h2 {
+    margin: 0 0 1rem; }
+  .details > p, .details > blockquote {
+    line-height: 100%; }
+    .details > p > a, .details > blockquote > a {
+      color: #0e96a5; }
+  .details > h3, .details > .tag-musica, .details > .tag-gastronomia, .details > .tag-teatro, .details > .tag-humor, .details > .tag-arte {
+    margin: 2rem 0 .5rem; }
+  .details > .btn {
+    margin: 2rem 0 0; }
 
 html, body {
   font-family: "PT Sans", sans-serif;

@@ -178,14 +178,19 @@
   float: left;
   border-top: solid 4px #ff3766;
   margin-top: 20px;
-  width: 80px;
+
     img{
-    height: 35px;
-    margin: .3rem .1rem 0 0;
-    width: auto;
+      border-radius: 5px;
+      height: 35px;
+      margin: .3rem .1rem 0 0;
+      width: auto;
+      -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
     }
+
     img:hover {
-      opacity: .7;
+      border-radius: 50%;
     }
 }
 .more-info {

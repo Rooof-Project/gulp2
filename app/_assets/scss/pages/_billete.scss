@@ -1,0 +1,39 @@
+.feature {
+    background: $c-Lightest;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    & > img {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        height: auto;
+        width: 80%;
+    }
+}
+
+.details {
+    background: $c-Lightest;
+    margin: 1rem 0;
+    padding: 3rem 10%;
+
+    & > h2 {
+        margin: 0 0 1rem;
+    }
+
+    & > p {
+        line-height: 100%;
+
+        & > a {
+            color: $blue;
+        }
+    }
+
+    & > h3 {
+        margin: 2rem 0 .5rem;
+    }
+
+    & > .btn {
+        margin: 2rem 0 0;
+    }
+}

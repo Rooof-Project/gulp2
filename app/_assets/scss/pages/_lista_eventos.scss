@@ -110,10 +110,31 @@ padding: auto 0 50px;
     width: 35px;
     height: 35px;
   }
-
 }
 
 
+.search-form {
+  display: block;
+  margin: 0 auto 2rem;
+  text-align: center;
+
+  .search {
+    border: solid 1px $c-main-pink;
+    border-radius: 8px 0 0 8px;
+    color: $c-main-pink;
+    font-size: 20px;
+    height: 47px;
+    padding: 0 1rem;
+    max-width: 600px;
+    width: 60%;
+  }
+
+  & > .btn {
+    border-radius: 0 8px 8px 0;
+    padding-top: 8px;
+    margin-left: -5px;
+  }
+}
 
 
 

@@ -112,7 +112,7 @@
         <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
           <div class="tab-content">
             <form>
-              <input class="price-number" type="number" min="0" max="9999999" name="price"> <h2 class="persona"> personas</h2>
+              <input class="price-number" type="number" min="0" max="9999999" name="price" required> <h2 class="persona"> personas</h2>
               <select>
                 <option value="eixampla">Eixample</option>
                 <option value="gracia">Gràcia</option>
@@ -225,32 +225,68 @@
               <p>Tu evento ha sido publicado con éxito.
             Recuerda completar tu perfil para que tus invitados sepan más sobre ti
                 y se animen a compartir esta experiencia contigo.</p>
+                <a href="perfil-personal.html" class="volver-a-perfil-personal">volver a tu perfil</a>
               <a href="lista-eventos-logueado.html" class="btn btn_euro">CONTINUAR EN ROOOF</a>
             </form>
           </div>
         </dd>
       </dl>
 
+      <!-- if you want the blank input sale error, use the following JS -->
+
+      <!-- <script>
+        $('.js-temporarySaveButton').click(function(event) {
+          event.preventDefault();
+          var name = $('textarea[name="text"]');
+          var label = name.siblings('label');
+          var nameContent = $.trim(name.val());
+          if(nameContent == "") {
+            label.show();
+            name.addClass('error');
+          } else {
+            name.removeClass('error');
+            label.hide();
+              var parentDD = $(this).parent().parent().parent();
+              parentDD.slideUp();
+              parentDD.prev().children().removeClass('close');
+              parentDD.next().next().slideDown();
+              parentDD.next().children().addClass('close');
+          }
+        });
+
+        $('dt a').click(function(event) {
+          event.preventDefault();
+          $('dd:visible').prev().children().removeClass('close');
+          $('dd:visible').slideUp();
+          $(this).addClass('close');
+          if($(this).parent().next().is(':hidden')) {
+            $(this).parent().next().slideDown();
+          } else {
+            $(this).removeClass('close');
+          }
+        });
+
+        $('textarea[name="text"]').focusout(function() {
+          var name = $('textarea[name="text"]');
+          if(name.val() == "") {
+            name.addClass('error');
+            label.show();
+          } else {
+            name.removeClass('error');
+            label.hide();
+          }
+        });
+      </script> -->
+
       <script>
       $('.js-temporarySaveButton').click(function(event) {
         event.preventDefault();
-        var name = $('textarea[name="text"]');
-        var label = name.siblings('label');
-        var nameContent = $.trim(name.val());
-        if(nameContent == "") {
-          label.show();
-          name.addClass('error');
-        } else {
-          name.removeClass('error');
-          label.hide();
-            var parentDD = $(this).parent().parent().parent();
-            parentDD.slideUp();
-            parentDD.prev().children().removeClass('close');
-            parentDD.next().next().slideDown();
-            parentDD.next().children().addClass('close');
-        }
+        var parentDD = $(this).parent().parent().parent();
+        parentDD.slideUp();
+        parentDD.prev().children().removeClass('close');
+        parentDD.next().next().slideDown();
+        parentDD.next().children().addClass('close');
       });
-
       $('dt a').click(function(event) {
         event.preventDefault();
         $('dd:visible').prev().children().removeClass('close');
@@ -260,17 +296,6 @@
           $(this).parent().next().slideDown();
         } else {
           $(this).removeClass('close');
-        }
-      });
-
-      $('textarea[name="text"]').focusout(function() {
-        var name = $('textarea[name="text"]');
-        if(name.val() == "") {
-          name.addClass('error');
-          label.show();
-        } else {
-          name.removeClass('error');
-          label.hide();
         }
       });
       </script>
