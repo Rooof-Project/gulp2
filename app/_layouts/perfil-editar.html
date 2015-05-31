@@ -8,7 +8,6 @@
 
         {% include header-logueado.html %}
 
-
 <section class="perfil-editar section-intro">
 
        <div class="perfil-user-img">
@@ -33,14 +32,33 @@
       <div class="row">
         <div class="columns large-11">
             <div class="field">
-              <label for="">Escoge al menos un área que te guste</label>
-              <input placeholder="Quiero asistir a eventos de"type="text" class="full-width">
+                <label for="">Escoge al menos un área que te guste</label>
+                <!-- <input placeholder="Quiero asistir a eventos de"type="text" class="full-width"> -->
+                <dl class="dropdown full-width">
+                    <dt>
+                        <a href="##">
+                            <span class="hida">Quiero asistir a eventos de...</span>
+                            <p class="multiSel"></p>
+                        </a>
+                    </dt>
+                    <dd>
+                        <div class="mutliSelect">
+                            <ul>
+                                <li><input type="checkbox" value="Música" /> <p class="tag-musica"></p></li>
+                                <li><input type="checkbox" value="Gastronomía" /> <p class="tag-gastronomia"></p></li>
+                                <li><input type="checkbox" value="Teatro" /> <p class="tag-teatro"></p></li>
+                                <li><input type="checkbox" value="Humor" /> <p class="tag-humor"></p></li>
+                                <li><input type="checkbox" value="Arte" /> <p class="tag-arte"></p></li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
             </div>
-          </div>
+        </div>
         <div class="columns large-11">
           <div class="field">
             <label for="">Añade tu sitio web personal </label>
-            <input type="text" class="full-width">
+            <input type="text" class="full-width" placeholder="http: //www.rooof.com">
          </div>
         </div>
       </div>
@@ -50,7 +68,7 @@
 
          <div class="field">
            <label for="">Correo electrónico</label>
-           <input type="email" class="full-width">
+           <input type="email" class="full-width" placeholder="hello@rooof.com">
            <p class="hint">Sólo será visible una vez hecha la reserva</p>
          </div>
 
@@ -78,6 +96,50 @@
 
   </div>
 </div>
+
+<script>
+    /*
+    Dropdown with Multiple checkbox select with jQuery - May 27, 2013
+    (c) 2013 @ElmahdiMahmoud
+    license: http://www.opensource.org/licenses/mit-license.php
+*/
+
+$(".dropdown dt a").on('click', function () {
+          $(".dropdown dd ul").slideToggle('fast');
+      });
+
+      $(".dropdown dd ul li a").on('click', function () {
+          $(".dropdown dd ul").hide();
+      });
+
+      function getSelectedValue(id) {
+           return $("##" + id).find("dt a span.value").html();
+      }
+
+      $(document).bind('click', function (e) {
+          var $clicked = $(e.target);
+          if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+      });
+
+
+      $('.mutliSelect input[type="checkbox"]').on('click', function () {
+
+          var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+              title = $(this).val() + ",";
+
+          if ($(this).is(':checked')) {
+              var html = '<span title="' + title + '">' + title + '</span>';
+              $('.multiSel').append(html);
+              $(".hida").hide();
+          }
+          else {
+              $('span[title="' + title + '"]').remove();
+              var ret = $(".hida");
+              $('.dropdown dt a').append(ret);
+
+          }
+      });
+</script>
 
 </section>
 

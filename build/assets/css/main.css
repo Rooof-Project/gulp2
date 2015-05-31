@@ -5783,6 +5783,65 @@ section.perfil-editar {
 .titulo_form__wrap_first {
   padding: 10px 0px 20px 0px; }
 
+.dropdown dd, .dropdown dt {
+  margin: 0px;
+  padding: 0px; }
+
+.dropdown ul {
+  margin: -1px 0 0 0; }
+
+.dropdown dd {
+  position: relative; }
+
+.dropdown a, .dropdown a:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px; }
+
+.dropdown dt a {
+  display: block;
+  overflow: hidden;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  width: 100%; }
+
+.dropdown dt a span, .multiSel span {
+  color: #ccc;
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  margin-left: 10px;
+  overflow: hidden; }
+
+.multiSel span {
+  color: #333 !important; }
+
+.dropdown dd ul {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  display: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  overflow: auto;
+  z-index: 2; }
+
+.dropdown span.value {
+  display: none; }
+
+.dropdown dd ul li {
+  border-bottom: solid 1px #ccc;
+  padding: 5px 0 5px 10px;
+  display: block; }
+
+.dropdown dd ul li:hover {
+  background-color: #ccc; }
+
 .feature {
   background: #fff;
   margin: 0 auto;
