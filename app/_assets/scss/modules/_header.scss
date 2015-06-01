@@ -288,10 +288,21 @@ header {
                   }
                 }
 
-
-            }
-
+          }
             /* end of pop-up */
         }
     }
+}
+form.reg, form.logi {
+  & > p.p-complementary {
+    font-size: 15px;
+    & > a {
+        color: $c-main-pink!important;
+        font-size: 15px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+    }
+  }
 }

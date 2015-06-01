@@ -2396,6 +2396,14 @@ header {
           text-decoration: underline;
           font-size: 14px; } }
 
+form.reg > p.p-complementary, form.reg > blockquote.p-complementary, form.reg > blockquote.hint, form.reg > blockquote.prefilled, form.reg > p.hint, form.reg > p.prefilled, form.logi > p.p-complementary, form.logi > blockquote.p-complementary, form.logi > blockquote.hint, form.logi > blockquote.prefilled, form.logi > p.hint, form.logi > p.prefilled {
+  font-size: 15px; }
+  form.reg > p.p-complementary > a, form.reg > blockquote.p-complementary > a, form.reg > blockquote.hint > a, form.reg > blockquote.prefilled > a, form.reg > p.hint > a, form.reg > p.prefilled > a, form.logi > p.p-complementary > a, form.logi > blockquote.p-complementary > a, form.logi > blockquote.hint > a, form.logi > blockquote.prefilled > a, form.logi > p.hint > a, form.logi > p.prefilled > a {
+    color: #ff3766 !important;
+    font-size: 15px; }
+    form.reg > p.p-complementary > a:hover, form.reg > blockquote.p-complementary > a:hover, form.reg > blockquote.hint > a:hover, form.reg > blockquote.prefilled > a:hover, form.reg > p.hint > a:hover, form.reg > p.prefilled > a:hover, form.logi > p.p-complementary > a:hover, form.logi > blockquote.p-complementary > a:hover, form.logi > blockquote.hint > a:hover, form.logi > blockquote.prefilled > a:hover, form.logi > p.hint > a:hover, form.logi > p.prefilled > a:hover {
+      text-decoration: underline; }
+
 .bottom-abajo {
   margin-top: 20px; }
 
@@ -2887,6 +2895,66 @@ header .sregistro {
   .slider ul > li > .content > p, .slider ul > li > .content > blockquote {
     font-size: 18px;
     width: 280px; } }
+
+.pageInicioSesion, .pageRegistrate {
+  background-color: #ccc;
+  padding-bottom: 1rem; }
+  .pageInicioSesion .wrap, .pageRegistrate .wrap {
+    background-color: #fff;
+    margin: 1rem auto 0;
+    padding: 1rem;
+    max-width: 340px; }
+    .pageInicioSesion .wrap .reg-facebook, .pageInicioSesion .wrap .reg-twitter, .pageRegistrate .wrap .reg-facebook, .pageRegistrate .wrap .reg-twitter {
+      margin: 0px auto;
+      height: 35px; }
+    .pageInicioSesion .wrap .reg-facebook a, .pageInicioSesion .wrap .reg-twitter a, .pageRegistrate .wrap .reg-facebook a, .pageRegistrate .wrap .reg-twitter a {
+      text-align: center;
+      color: white;
+      margin: 0px 0px 0px 40px;
+      line-height: 2em; }
+    .pageInicioSesion .wrap .reg-facebook, .pageRegistrate .wrap .reg-facebook {
+      background: #37589B;
+      margin-bottom: 10px; }
+    .pageInicioSesion .wrap .reg-twitter, .pageRegistrate .wrap .reg-twitter {
+      background: #60CAEF; }
+    .pageInicioSesion .wrap .reg-facebook img, .pageRegistrate .wrap .reg-facebook img {
+      float: left;
+      width: 10.9px;
+      height: 21.1px;
+      margin: 7px 0px 0px 30px; }
+    .pageInicioSesion .wrap .reg-twitter img, .pageRegistrate .wrap .reg-twitter img {
+      float: left;
+      width: 25px;
+      height: 19.8px;
+      margin: 8px 0px 0px 23px; }
+    .pageInicioSesion .wrap .form-divider__wrap, .pageRegistrate .wrap .form-divider__wrap {
+      margin: 5px 0px; }
+    .pageInicioSesion .wrap .reg-line-left, .pageInicioSesion .wrap .reg-line-right, .pageRegistrate .wrap .reg-line-left, .pageRegistrate .wrap .reg-line-right {
+      width: 133px;
+      height: 20px;
+      border-bottom: solid 1px #a7a7a8; }
+    .pageInicioSesion .wrap .reg-line-left, .pageRegistrate .wrap .reg-line-left {
+      float: left; }
+    .pageInicioSesion .wrap .zero, .pageRegistrate .wrap .zero {
+      float: left;
+      margin: 6px 0px 0px 15px; }
+    .pageInicioSesion .wrap .reg-line-right, .pageRegistrate .wrap .reg-line-right {
+      float: right; }
+    .pageInicioSesion .wrap .inicia-sesion, .pageInicioSesion .wrap .inicia-sesion1, .pageRegistrate .wrap .inicia-sesion, .pageRegistrate .wrap .inicia-sesion1 {
+      width: 100%;
+      background: #ededed; }
+    .pageInicioSesion .wrap .footer-reg, .pageRegistrate .wrap .footer-reg {
+      padding: 20px;
+      margin-bottom: 0px; }
+      .pageInicioSesion .wrap .footer-reg p.p-complementary, .pageInicioSesion .wrap .footer-reg blockquote.p-complementary, .pageInicioSesion .wrap .footer-reg form blockquote.hint, form .pageInicioSesion .wrap .footer-reg blockquote.hint, .pageInicioSesion .wrap .footer-reg form blockquote.prefilled, form .pageInicioSesion .wrap .footer-reg blockquote.prefilled, .pageInicioSesion .wrap .footer-reg form p.hint, form .pageInicioSesion .wrap .footer-reg p.hint, .pageInicioSesion .wrap .footer-reg form p.prefilled, form .pageInicioSesion .wrap .footer-reg p.prefilled, .pageRegistrate .wrap .footer-reg p.p-complementary, .pageRegistrate .wrap .footer-reg blockquote.p-complementary, .pageRegistrate .wrap .footer-reg form blockquote.hint, form .pageRegistrate .wrap .footer-reg blockquote.hint, .pageRegistrate .wrap .footer-reg form blockquote.prefilled, form .pageRegistrate .wrap .footer-reg blockquote.prefilled, .pageRegistrate .wrap .footer-reg form p.hint, form .pageRegistrate .wrap .footer-reg p.hint, .pageRegistrate .wrap .footer-reg form p.prefilled, form .pageRegistrate .wrap .footer-reg p.prefilled {
+        font-size: 14px; }
+      .pageInicioSesion .wrap .footer-reg button, .pageRegistrate .wrap .footer-reg button {
+        font-family: "PT Sans", sans-serif;
+        float: none;
+        color: #ff3766;
+        margin: 0 auto;
+        text-decoration: underline;
+        font-size: 14px; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome

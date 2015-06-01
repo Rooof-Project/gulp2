@@ -1,0 +1,92 @@
+.pageInicioSesion,
+.pageRegistrate {
+    background-color: #ccc;
+    padding-bottom: 1rem;
+
+    .wrap {
+        background-color: $c-Lightest;
+        margin: 1rem auto 0;
+        padding: 1rem;
+        max-width: 340px;
+
+        .reg-facebook, .reg-twitter {
+            margin: 0px auto;
+            height: 35px;
+        }
+
+        .reg-facebook a, .reg-twitter a {
+            text-align: center;
+            color: white;
+            margin: 0px 0px 0px 40px;
+            line-height: 2em;
+        }
+
+        .reg-facebook {
+            background: #37589B;
+            margin-bottom: 10px;
+        }
+        .reg-twitter {
+            background: #60CAEF;
+        }
+
+        .reg-facebook img {
+            float: left;
+            width: 10.9px;
+            height: 21.1px;
+            margin: 7px 0px 0px 30px;
+        }
+
+        .reg-twitter img {
+            float: left;
+            width: 25px;
+            height: 19.8px;
+            margin: 8px 0px 0px 23px;
+        }
+
+        .form-divider__wrap{
+            margin: 5px 0px;
+        }
+
+        .reg-line-left, .reg-line-right {
+            width: 133px;
+            height: 20px;
+            border-bottom: solid 1px #a7a7a8;
+        }
+
+        .reg-line-left {
+            float: left;
+        }
+
+        .zero {
+            float: left;
+            margin: 6px 0px 0px 15px;
+        }
+
+        .reg-line-right {
+            float: right;
+        }
+
+        .inicia-sesion, .inicia-sesion1 {
+            width: 100%;
+            background: #ededed;
+        }
+
+        .footer-reg{
+            padding:20px;
+            margin-bottom: 0px;
+
+            p.p-complementary{
+                font-size: 14px;
+            }
+
+            button{
+                font-family: $font-complementary;
+                float: none;
+                color:$c-main-pink;
+                margin: 0 auto;
+                text-decoration: underline;
+                font-size: 14px;
+            }
+        }
+    }
+}
