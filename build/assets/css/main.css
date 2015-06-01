@@ -2370,14 +2370,14 @@ header {
       header .wrap nav ul.right .form-divider__wrap {
         margin: 5px 0px; }
       header .wrap nav ul.right .reg-line-left, header .wrap nav ul.right .reg-line-right {
-        width: 133px;
+        width: 43%;
         height: 20px;
         border-bottom: solid 1px #a7a7a8; }
       header .wrap nav ul.right .reg-line-left {
         float: left; }
       header .wrap nav ul.right .zero {
         float: left;
-        margin: 6px 0px 0px 15px; }
+        margin: 6px 0px 0px 16px; }
       header .wrap nav ul.right .reg-line-right {
         float: right; }
       header .wrap nav ul.right .inicia-sesion, header .wrap nav ul.right .inicia-sesion1 {
@@ -2930,14 +2930,14 @@ header .sregistro {
     .pageInicioSesion .wrap .form-divider__wrap, .pageRegistrate .wrap .form-divider__wrap {
       margin: 5px 0px; }
     .pageInicioSesion .wrap .reg-line-left, .pageInicioSesion .wrap .reg-line-right, .pageRegistrate .wrap .reg-line-left, .pageRegistrate .wrap .reg-line-right {
-      width: 133px;
+      width: 43%;
       height: 20px;
       border-bottom: solid 1px #a7a7a8; }
     .pageInicioSesion .wrap .reg-line-left, .pageRegistrate .wrap .reg-line-left {
       float: left; }
     .pageInicioSesion .wrap .zero, .pageRegistrate .wrap .zero {
       float: left;
-      margin: 6px 0px 0px 15px; }
+      margin: 6px 0px 0px 16px; }
     .pageInicioSesion .wrap .reg-line-right, .pageRegistrate .wrap .reg-line-right {
       float: right; }
     .pageInicioSesion .wrap .inicia-sesion, .pageInicioSesion .wrap .inicia-sesion1, .pageRegistrate .wrap .inicia-sesion, .pageRegistrate .wrap .inicia-sesion1 {
