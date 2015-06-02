@@ -5014,8 +5014,7 @@ table {
   width: 50%; }
 
 .sugerencias {
-  width: 100%;
-  background: white; }
+  width: 100%; }
 
 .evento {
   overflow: hidden;
@@ -5114,21 +5113,8 @@ table {
   .asistir .icon-text {
     text-align: center; }
     .asistir .icon-text .icons {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: solid 5px #a4a1a1;
-      line-height: 0em;
-      margin: 2rem auto 1rem; }
-      .asistir .icon-text .icons p, .asistir .icon-text .icons blockquote {
-        color: #a4a1a1;
-        font-family: "Dosis", sans-serif;
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 1.4em;
-        margin: 0px;
-        text-align: center;
-        padding: 0px; }
+      width: 100px;
+      height: 100px; }
   .asistir .complementary {
     margin: 1rem 0 1rem 0; }
   .asistir .icon-text h3, .asistir .icon-text .tag-musica, .asistir .icon-text .tag-gastronomia, .asistir .icon-text .tag-teatro, .asistir .icon-text .tag-humor, .asistir .icon-text .tag-arte {

@@ -41,7 +41,6 @@
 
 .sugerencias {
     width: 100%;
-    background: white;
 }
 
 
@@ -159,23 +158,8 @@
         text-align: center;
 
         .icons {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: solid 5px $c-grayLighter;
-            line-height: 0em;
-            margin: 2rem auto 1rem;
-
-            p {
-                color: $c-grayLighter;
-                font-family: $font-primary;
-                font-size: 50px;
-                font-weight: 700;
-                line-height: 1.4em;
-                margin: 0px;
-                text-align: center;
-                padding: 0px;
-            }
+            width: 100px;
+            height: 100px;
         }
     }
 
