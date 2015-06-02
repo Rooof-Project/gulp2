@@ -2267,7 +2267,7 @@ header .sregistro {
   font-size: 13px;
   text-decoration: underline;
   position: absolute;
-  right: 2rem;
+  right: 2.5rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -2279,6 +2279,33 @@ header .sregistro {
     position: absolute;
     top: -12px;
     left: -50px; }
+  header .sregistro:after {
+    color: #ff3766;
+    content: '\25BE';
+    font-size: 14px;
+    position: absolute;
+    top: -1px;
+    right: -15px; }
+header .dropdownito {
+  background-color: #eaeaea;
+  border-radius: 20px;
+  color: #333;
+  display: none;
+  padding: .2rem 0;
+  position: fixed;
+  left: 83%;
+  top: 38px;
+  list-style: none;
+  text-align: left; }
+  header .dropdownito > li {
+    border-bottom: solid 2px #dbdbdb;
+    clear: both;
+    line-height: 200%;
+    margin: 0 !important;
+    padding: 0 1rem;
+    width: 100%; }
+    header .dropdownito > li:last-child {
+      border-bottom: 0; }
 
 .slider-wrap {
   display: inline;

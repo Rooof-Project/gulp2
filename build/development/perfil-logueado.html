@@ -41,8 +41,16 @@
                 <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
                 <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
                 <li><a href="crea-logueado.html">Crea tu evento</a></li>
+                <li>
+
+                </li>
             </ul>
             <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
+            <ul class="dropdownito">
+                <li><a href="perfil-vacio.html">Mi perfil</a></li>
+                <li><a href="perfil-editar.html">Editar perfil</a></li>
+                <li><a href="perfil.html">Cerrar sesión</a></li>
+            </ul>
         </nav>
 
         <div class="nav-hamburger">
@@ -52,10 +60,12 @@
     </div>
     <div class="menu">
         <ul>
-            <a href="somos-logueado.html"><li>¿Qu&eacute; es ROOOF?</li></a>
-            <a href="lista-eventos-logueado.html"><li>Busca un evento</li></a>
-            <a href="crea-logueado.html"><li>Crea tu evento</li></a>
-            <a href="perfil-vacio.html"><li>Mi Perfil</li></a>
+            <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+            <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+            <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            <li><a href="perfil-vacio.html">Mi Perfil</a></li>
+            <li><a href="perfil-editar.html">Editar perfil</a></li>
+            <li><a href="perfil.html">Cerrar sesión</a></li>
         </ul>
     </div>
 
@@ -74,6 +84,20 @@
                 $( ".cross" ).hide();
                 $( ".hamburger" ).show();
             });
+        });
+
+        // $( 'nav > .sregistro' ).hover(function() {
+        //     $( 'nav > .dropdownito' ).addClass( 'dropdownitoShow' );
+        // });
+
+        // $( 'nav > .sregistro' ).mouseout(function() {
+        //     $( 'nav > .dropdownito' ).removeClass( 'dropdownitoShow' );
+        // });
+
+        $( 'nav > .sregistro' ).hover(function(event) {
+            event.preventDefault();
+
+            $( 'nav > .dropdownito' ).slideToggle(500);
         });
     </script>
 </header>

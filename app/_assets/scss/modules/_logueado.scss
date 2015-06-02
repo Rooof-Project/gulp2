@@ -1,4 +1,5 @@
 header {
+
   .sregistro{
     color: $c-main-pink!important;
     cursor: pointer;
@@ -9,7 +10,7 @@ header {
     font-size: 13px;
     text-decoration: underline;
     position: absolute;
-      right: 2rem;
+      right: 2.5rem;
       top: 50%;
     transform: translateY(-50%);
 
@@ -19,6 +20,41 @@ header {
       position: absolute;
       top: -12px;
       left: -50px;
+    }
+
+    &:after {
+      color: $c-main-pink;
+      content: '\25BE';
+      font-size: 14px;
+      position: absolute;
+        top: -1px;
+        right: -15px;
+    }
+  }
+
+  .dropdownito {
+    background-color: $grey;
+    border-radius: 20px;
+    color: $c-main-gray;
+    display: none;
+    padding: .2rem 0;
+    position: fixed;
+      left: 83%;
+      top: 38px;
+    list-style: none;
+    text-align: left;
+
+    & > li {
+      border-bottom: solid 2px #dbdbdb;
+      clear: both;
+      line-height: 200%;
+      margin: 0!important;
+      padding: 0 1rem;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }
   }
 }
