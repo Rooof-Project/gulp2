@@ -15,9 +15,7 @@
     </div>
     <div class="row">
     <div class="large-18 medium-16 columns">
-        <div class="alert alert-success">
-         Has reservado tus entradas. Te las hemos enviado a tu correo.
-        </div>
+        {% include alert-success.html %}
         <img class="img-main" src="../assets/images/foto_ficha_evento_2.jpg">
         <div class="main-container">
 
@@ -73,19 +71,7 @@
             </div>
 
                     <div class="main-precio"><p class="p-complementary">6€ / persona</p></div>
-            <div class="ticket__warp">
-            <div class="border-ticket">
-              <div class="ticket">
-                <h4>Ya has reservado tu entrada para este evento</h4>
-                <ul>
-                  <li><a href="lista-eventos-logueado.html"> Busca otros eventos > </a></li>
-                </ul>
-
-              </div>
-            </div>
-              <span href="#" class="btn btn-full disabled">RESERVAR ENTRADA</span>
-              </div>
-
+            {% include button-disable-reserva.html %}
 
             <div class="clearfix">
                 <div class="compartir__wrap">
