@@ -1752,61 +1752,63 @@ header {
   width: 100%;
   height: 57px;
   border-bottom: solid 1px #bbbaba; }
-  header .wrap .logo {
-    font-weight: 700;
-    font-size: 30px;
-    color: #333;
-    line-height: 1.8em;
-    margin-left: 1.5rem;
-    width: 120px;
-    float: left; }
-  header .wrap .logo a {
-    color: #333;
-    font-family: "Dosis", sans-serif;
-    font-size: 30px;
-    font-weight: 800; }
-    header .wrap .logo a:hover {
-      text-decoration: none; }
-  header .wrap nav {
-    display: none; }
-    header .wrap nav a {
+  header .wrap {
+    overflow: visible; }
+    header .wrap .logo {
+      font-weight: 700;
+      font-size: 30px;
       color: #333;
-      font-family: "Dosis", sans-serif; }
-      header .wrap nav a:hover {
-        color: #8e8e8e;
+      line-height: 1.8em;
+      margin-left: 1.5rem;
+      width: 120px;
+      float: left; }
+    header .wrap .logo a {
+      color: #333;
+      font-family: "Dosis", sans-serif;
+      font-size: 30px;
+      font-weight: 800; }
+      header .wrap .logo a:hover {
         text-decoration: none; }
-  header .wrap .nav-hamburger {
-    width: 100%;
-    height: 50px;
-    line-height: 50px; }
-    header .wrap .nav-hamburger .hamburger {
-      background: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      line-height: 55px;
-      padding: 0px 15px 0px 15px;
-      color: #333;
-      border: 0;
-      font-size: 2.5em;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      z-index: 999; }
-    header .wrap .nav-hamburger .cross {
-      background: none;
-      position: absolute;
-      top: 5px;
-      right: 0;
-      padding: 0px 15px 0px 15px;
-      color: #333;
-      border: 0;
-      font-size: 5em;
-      line-height: 65px;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      z-index: 999; }
+    header .wrap nav {
+      display: none; }
+      header .wrap nav a {
+        color: #333;
+        font-family: "Dosis", sans-serif; }
+        header .wrap nav a:hover {
+          color: #8e8e8e;
+          text-decoration: none; }
+    header .wrap .nav-hamburger {
+      width: 100%;
+      height: 50px;
+      line-height: 50px; }
+      header .wrap .nav-hamburger .hamburger {
+        background: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 55px;
+        padding: 0px 15px 0px 15px;
+        color: #333;
+        border: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 999; }
+      header .wrap .nav-hamburger .cross {
+        background: none;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        padding: 0px 15px 0px 15px;
+        color: #333;
+        border: 0;
+        font-size: 5em;
+        line-height: 65px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 999; }
   header .menu {
     z-index: 1000000;
     font-weight: bold;
@@ -2290,14 +2292,9 @@ header .sregistro {
     top: -1px;
     right: -15px; }
 header .dropdownito {
-<<<<<<< HEAD
   background-color: #fff;
   border: solid 1px #bbbaba;
   border-top: 0;
-=======
-  background-color: #f8f8f8;
-  border-radius: 10px;
->>>>>>> ed6a1695d0b38c13920c38c462adc31c48738049
   color: #333;
   display: none;
   padding: .2rem 0;
@@ -4785,8 +4782,7 @@ table {
     width: 100%; } }
 
 section.lista-eventos {
-  background-color: #eaeaea;
-  padding: 0 !important; }
+  background-color: #eaeaea; }
   section.lista-eventos ul {
     padding-left: 0; }
 
@@ -4891,7 +4887,8 @@ section.lista-eventos {
     margin-left: -5px; }
 
 .ficha-evento {
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  padding-bottom: 0; }
 
 .img-main {
   width: 100%;
@@ -5592,7 +5589,8 @@ section, .section {
 
 .wrap {
   margin: 0 auto;
-  max-width: 1100px; }
+  max-width: 1100px;
+  overflow: hidden; }
   @media only screen and (min-width: 40.063em) {
     .wrap {
       padding: 0px 0px; } }

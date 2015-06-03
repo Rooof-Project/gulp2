@@ -11,6 +11,8 @@ header {
     border-bottom: solid 1px $c-dark-gray;
 
     .wrap{
+      overflow: visible;
+
         .logo {
             // border-right: solid 1px $c-dark-gray;
             font-weight: 700;
