@@ -1859,7 +1859,6 @@ header {
       display: none; }
     header .wrap nav {
       display: block;
-      overflow: hidden;
       padding-top: 3px;
       position: relative;
       width: 100% ；; }
@@ -2292,9 +2291,9 @@ header .dropdownito {
   color: #333;
   display: none;
   padding: .2rem 0;
-  position: fixed;
-  left: 83%;
-  top: 38px;
+  position: absolute;
+  top: 45px;
+  right: 10px;
   list-style: none;
   text-align: left; }
   header .dropdownito > li {
@@ -2308,6 +2307,17 @@ header .dropdownito {
       border-bottom: 0; }
 header .dropdownitoShow {
   display: block; }
+header .foologin {
+  position: relative; }
+  header .foologin:before {
+    content: '';
+    display: table; }
+  header .foologin:after {
+    content: '';
+    clear: both;
+    display: table; }
+  header .foologin:hover .dropdownito {
+    display: block; }
 
 .slider-wrap {
   display: inline;

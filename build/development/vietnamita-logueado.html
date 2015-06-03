@@ -45,12 +45,14 @@
 
                 </li>
             </ul>
-            <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
-            <ul class="dropdownito">
-                <li><a href="perfil-vacio.html">Mi perfil</a></li>
-                <li><a href="perfil-editar.html">Editar perfil</a></li>
-                <li><a href="vietnamita.html">Cerrar sesión</a></li>
-            </ul>
+            <div class="foologin">
+                <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
+                <ul class="dropdownito">
+                    <li><a href="perfil-vacio.html">Mi perfil</a></li>
+                    <li><a href="perfil-editar.html">Editar perfil</a></li>
+                    <li><a href="vietnamita.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div class="nav-hamburger">
@@ -92,9 +94,6 @@
             $('nav > .dropdownito').removeClass("dropdownitoShow");
         });
 
-        // $( 'nav > .sregistro' ).mouseout(function() {
-        //     $( 'nav > .dropdownito' ).removeClass( 'dropdownitoShow' );
-        // });
 
         // $( 'nav > .sregistro' ).hover(function(event) {
         //     event.preventDefault();
@@ -102,6 +101,7 @@
         //     $( 'nav > .dropdownito' ).slideToggle(500);
         // });
     </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </header>
 
 
