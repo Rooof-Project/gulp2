@@ -2306,6 +2306,8 @@ header .dropdownito {
     width: 100%; }
     header .dropdownito > li:last-child {
       border-bottom: 0; }
+header .dropdownitoShow {
+  display: block; }
 
 .slider-wrap {
   display: inline;

@@ -85,19 +85,21 @@
             });
         });
 
-        // $( 'nav > .sregistro' ).hover(function() {
-        //     $( 'nav > .dropdownito' ).addClass( 'dropdownitoShow' );
-        // });
+        $( 'nav > .sregistro' ).hover(function() {
+            $( 'nav > .dropdownito' ).addClass( 'dropdownitoShow' );
+        }, function() {
+            $('nav > .dropdownito').removeClass("dropdownitoShow");
+        });
 
         // $( 'nav > .sregistro' ).mouseout(function() {
         //     $( 'nav > .dropdownito' ).removeClass( 'dropdownitoShow' );
         // });
 
-        $( 'nav > .sregistro' ).hover(function(event) {
-            event.preventDefault();
+        // $( 'nav > .sregistro' ).hover(function(event) {
+        //     event.preventDefault();
 
-            $( 'nav > .dropdownito' ).slideToggle(500);
-        });
+        //     $( 'nav > .dropdownito' ).slideToggle(500);
+        // });
     </script>
 </header>
 
