@@ -7,7 +7,7 @@ header {
     background: none;
     display: block;
     float: none;
-    font-size: 13px;
+    font-size: 16px;
     text-decoration: underline;
     position: absolute;
       right: 2.5rem;
@@ -33,14 +33,16 @@ header {
   }
 
   .dropdownito {
-    background-color: $grey;
-    border-radius: 20px;
+    background-color: $c-Lightest;
+    border: solid 1px $c-dark-gray;
+    border-top: 0;
+    // border-radius: 20px;
     color: $c-main-gray;
     display: none;
     padding: .2rem 0;
     position: absolute;
-      top: 45px;
-      right: 10px;
+      top: 53px;
+      right: 0;
     list-style: none;
     text-align: left;
 
@@ -63,7 +65,11 @@ header {
   }
 
   .foologin {
+    float: right;
+    height: 53px;
     position: relative;
+    width: 200px;
+
     &:before {
       content: '';
       display: table;

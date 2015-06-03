@@ -13,6 +13,18 @@
     cursor: -webkit-grab;
     cursor: grab;
 
+    ul {
+        .content {
+            h1, h2 {
+                text-shadow: 2px 2px 1px #ff3766!important;
+            }
+
+            & > p {
+                font-family: $font-primary!important;
+            }
+        }
+    }
+
     .arrow {
         font-family: arial;
         position: absolute;

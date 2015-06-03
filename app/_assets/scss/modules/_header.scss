@@ -107,7 +107,9 @@ header {
         .wrap {
 
           .logo {
+            float: left;
             margin-left: 1.5rem;
+            width: 10%;
           }
 
             .nav-hamburger {
@@ -119,11 +121,11 @@ header {
             }
 
             nav {
-                display: block;
-                //overflow: hidden;
+                float: left;
+                display: inline-block;
                 padding-top: 3px;
                 position: relative;
-                width: 100%；
+                width: 85%;
             }
 
             nav ul.left {
@@ -137,10 +139,10 @@ header {
             nav ul.left li {
                 float: left;
                 margin: 12px 15px;
-
             }
 
             nav ul.left li a {
+                font-size: 18px;
                 color: $c-main-gray;
             }
             nav ul.left li a:hover {

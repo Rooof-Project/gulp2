@@ -1852,16 +1852,19 @@ header {
   header .wrap {
     /* end of pop-up */ }
     header .wrap .logo {
-      margin-left: 1.5rem; }
+      float: left;
+      margin-left: 1.5rem;
+      width: 10%; }
     header .wrap .nav-hamburger {
       display: none; }
     header .wrap .menu {
       display: none; }
     header .wrap nav {
-      display: block;
+      float: left;
+      display: inline-block;
       padding-top: 3px;
       position: relative;
-      width: 100% ；; }
+      width: 85%; }
     header .wrap nav ul.left {
       float: left;
       font-weight: 400;
@@ -1872,6 +1875,7 @@ header {
       float: left;
       margin: 12px 15px; }
     header .wrap nav ul.left li a {
+      font-size: 18px;
       color: #333; }
     header .wrap nav ul.left li a:hover {
       color: #8e8e8e; }
@@ -2263,7 +2267,7 @@ header .sregistro {
   background: none;
   display: block;
   float: none;
-  font-size: 13px;
+  font-size: 16px;
   text-decoration: underline;
   position: absolute;
   right: 2.5rem;
@@ -2286,14 +2290,15 @@ header .sregistro {
     top: -1px;
     right: -15px; }
 header .dropdownito {
-  background-color: #eaeaea;
-  border-radius: 20px;
+  background-color: #fff;
+  border: solid 1px #bbbaba;
+  border-top: 0;
   color: #333;
   display: none;
   padding: .2rem 0;
   position: absolute;
-  top: 45px;
-  right: 10px;
+  top: 53px;
+  right: 0;
   list-style: none;
   text-align: left; }
   header .dropdownito > li {
@@ -2308,7 +2313,10 @@ header .dropdownito {
 header .dropdownitoShow {
   display: block; }
 header .foologin {
-  position: relative; }
+  float: right;
+  height: 53px;
+  position: relative;
+  width: 200px; }
   header .foologin:before {
     content: '';
     display: table; }
@@ -2332,6 +2340,10 @@ header .foologin {
   transition: 0.5s cubic-bezier(0.5, 0, 0.5, 1);
   cursor: -webkit-grab;
   cursor: grab; }
+  .slider ul .content h1, .slider ul .content span.mas, .slider ul .content h2 {
+    text-shadow: 2px 2px 1px #ff3766 !important; }
+  .slider ul .content > p, .slider ul .content > blockquote {
+    font-family: "Dosis", sans-serif !important; }
   .slider .arrow {
     font-family: arial;
     position: absolute;
@@ -4769,7 +4781,7 @@ table {
 
 section.lista-eventos {
   background-color: #eaeaea;
-  padding: auto 0px; }
+  padding: 0 !important; }
   section.lista-eventos ul {
     padding-left: 0; }
 
@@ -4954,9 +4966,12 @@ section.lista-eventos {
   .aside .tag-musica, .aside .tag-gastronomia, .aside .tag-teatro, .aside .tag-humor, .aside .tag-arte {
     margin-bottom: 2rem; }
 
+.info > h5 {
+  font-size: 16px; }
 .info h5, .info p, .info blockquote {
   margin: 0px; }
-.info p, .info blockquote {
+.info > p, .info > blockquote {
+  font-size: 18px;
   padding: 0px 0px 15px 36px; }
 
 .main-precio {
@@ -5004,7 +5019,16 @@ section.lista-eventos {
 .compartir__wrap {
   float: left;
   border-top: solid 4px #ff3766;
-  margin-top: 20px; }
+  margin-top: 40px;
+  position: relative; }
+  .compartir__wrap:before {
+    content: 'Compartir';
+    color: #ff3766;
+    height: 20px;
+    position: absolute;
+    top: -26px;
+    left: 3px;
+    width: 100px; }
   .compartir__wrap img {
     border-radius: 5px;
     height: 35px;

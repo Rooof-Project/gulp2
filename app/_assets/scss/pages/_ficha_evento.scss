@@ -118,10 +118,16 @@
 }
 
 .info{
+
+    & > h5 {
+      font-size: 16px;
+    }
+
     h5, p{
         margin: 0px;
     }
-    p{
+    & > p{
+        font-size: 18px;
         padding: 0px 0px 15px 36px;
     }
 }
@@ -177,7 +183,18 @@
 .compartir__wrap{
   float: left;
   border-top: solid 4px #ff3766;
-  margin-top: 20px;
+  margin-top: 40px;
+  position: relative;
+
+    &:before {
+      content: 'Compartir';
+      color: $c-main-pink;
+      height: 20px;
+      position: absolute;
+        top: -26px;
+        left: 3px;
+      width: 100px;
+    }
 
     img{
       border-radius: 5px;
