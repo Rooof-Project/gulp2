@@ -2286,8 +2286,8 @@ header .sregistro {
     top: -1px;
     right: -15px; }
 header .dropdownito {
-  background-color: #eaeaea;
-  border-radius: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
   color: #333;
   display: none;
   padding: .2rem 0;
@@ -5229,7 +5229,8 @@ span.mas {
 .crea-form {
   background-color: #eaeaea;
   padding-top: 57px;
-  width: 100%; }
+  width: 100%;
+  background: url("../images/bg-textura.png") #eaeaea repeat; }
 
 .atras {
   background: #333;
@@ -5429,8 +5430,7 @@ span.mas {
   display: block; }
 
 section.perfil-editar {
-  background: url(../img/pattern-backg.png) repeat;
-  background-color: #eaeaea; }
+  background: url("../images/bg-textura.png") #eaeaea repeat; }
   section.perfil-editar .perfil-user-img {
     height: 150px;
     float: none;
