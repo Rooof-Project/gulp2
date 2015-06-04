@@ -2125,6 +2125,10 @@ footer a {
   font-size: 1.4em;
   padding: 15px 60px; }
 
+.btn-md {
+  font-size: 1.2em;
+  padding: 12px 25px; }
+
 .btn-sm {
   font-size: .85em;
   padding: 5px 10px; }
@@ -5569,6 +5573,61 @@ section.perfil-editar {
     margin: 2rem 0 .5rem; }
   .details > .btn {
     margin: 2rem 0 0; }
+
+.oops {
+  background: url('../images/404.jpg') no-repeat top 30px left 10%;
+  background-size: contain;
+  height: 600px;
+  width: 100%;
+  position: relative; }
+  .oops > .text {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .oops > .text > h1, .oops > .text > span.mas {
+      color: #ff3766;
+      font-weight: 800;
+      font-size: 50px;
+      margin-bottom: 30px; }
+    .oops > .text > h2 {
+      display: none; }
+    .oops > .text > h3, .oops > .text > .tag-musica, .oops > .text > .tag-gastronomia, .oops > .text > .tag-teatro, .oops > .text > .tag-humor, .oops > .text > .tag-arte {
+      margin-bottom: 200px; }
+    .oops > .text > a {
+      display: block;
+      margin: 0 auto;
+      text-align: center; }
+
+@media screen and (min-width: 400px) {
+  .oops {
+    background: url('../images/404.jpg') no-repeat top 60px left 10%;
+    background-size: contain; }
+    .oops > .text > h1, .oops > .text > span.mas {
+      font-size: 60px; }
+    .oops > .text > h3, .oops > .text > .tag-musica, .oops > .text > .tag-gastronomia, .oops > .text > .tag-teatro, .oops > .text > .tag-humor, .oops > .text > .tag-arte {
+      margin-bottom: 380px; } }
+
+@media screen and (min-width: 800px) {
+  .oops {
+    background: url('../images/404.jpg') no-repeat top 50px left 10%;
+    background-size: contain; }
+    .oops > .text {
+      position: absolute;
+      top: 50px;
+      left: 100%;
+      width: 100%; }
+      .oops > .text > h1, .oops > .text > span.mas {
+        font-size: 70px; }
+      .oops > .text > h2 {
+        color: #333;
+        display: block; }
+      .oops > .text > h3, .oops > .text > .tag-musica, .oops > .text > .tag-gastronomia, .oops > .text > .tag-teatro, .oops > .text > .tag-humor, .oops > .text > .tag-arte {
+        margin-bottom: 30px; }
+      .oops > .text > a {
+        display: inline-block; } }
 
 html, body {
   font-family: "PT Sans", sans-serif;

@@ -1,0 +1,83 @@
+.oops {
+    background: url('../images/404.jpg') no-repeat top 30px left 10%;
+    background-size: contain;
+    height: 600px;
+    width: 100%;
+    position: relative;
+
+    & > .text {
+        position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        & > h1 {
+            color: $c-main-pink;
+            font-weight: 800;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        & > h2 {
+            display: none;
+        }
+
+        & > h3 {
+            margin-bottom: 200px;
+        }
+
+        & > a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .oops {
+        background: url('../images/404.jpg') no-repeat top 60px left 10%;
+        background-size: contain;
+
+        & > .text {
+            & > h1 {
+                font-size: 60px;
+            }
+
+            & > h3 {
+                margin-bottom: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .oops {
+        background: url('../images/404.jpg') no-repeat top 50px left 10%;
+        background-size: contain;
+
+        & > .text {
+            position: absolute;
+                top: 50px;
+                left: 100%;
+            width: 100%;
+
+            & > h1 {
+                font-size: 70px;
+            }
+
+            & > h2 {
+                color: $c-main-gray;
+                display: block;
+            }
+
+            & > h3 {
+                margin-bottom: 30px;
+            }
+
+            & > a {
+                display: inline-block;
+            }
+        }
+    }
+}
